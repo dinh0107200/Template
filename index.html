@@ -6,15 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang chu</title>
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css"
         integrity="sha512-rt/SrQ4UNIaGfDyEXZtNcyWvQeOq0QLygHluFQcSjaGB04IxWhal71tKuzP6K8eYXYB6vJV4pHkXcmFGGQ1/0w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/js/bootstrap.min.js"
         integrity="sha512-7rusk8kGPFynZWu26OKbTeI+QPoYchtxsmPeBqkHIEXJxeun4yJ4ISYe7C6sz9wdxeE1Gk3VxsIWgCZTc+vX3g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jQuery.Marquee/1.5.0/jquery.marquee.min.js"></script>
 </head>
 
 <body>
@@ -58,7 +65,647 @@
 
         </div>
     </header>
-    <main style="height: 100vh;"></main>
+    <section class="banner py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 d-flex flex-column  justify-content-center">
+                    <h2 class="banner-title">
+                        Giải pháp thiết kế website <br> chuyên nghiệp
+                    </h2>
+                    <p class="banner-subtext">Phù hợp với tất cả doanh nghiệp, cửa hàng quy mô lớn, vừa & nhỏ</p>
+                    <a class="btn-registration CTA-home">
+                        <span class="text">Dùng thử miễn phí</span>
+                        <span class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8">
+                                </path>
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <img src="./images/thiet-ke-website-chuyen-nghiep.png" alt="" class="banner-image">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="info-section">
+        <div class="container">
+            <div class="block-content">
+                <div>
+                    <div class="info-content media">
+                        <div class="info-icon">
+                            <img src="./images/icon-administration-1.png" alt="">
+                        </div>
+                        <div class="media-body">
+                            <p class="text">Được tin tưởng bởi</p>
+                            <div class="content d-flex">
+                                <div class="count">
+                                    230,000
+                                </div>
+                                <p class="mb-0">
+                                    Khách hàng
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="info-content media">
+                        <div class="info-icon">
+                            <img src="./images/icon-administration-1.png" alt="">
+                        </div>
+                        <div class="media-body">
+                            <p class="text">Được tin tưởng bởi</p>
+                            <div class="content d-flex">
+                                <div class="count">
+                                    230,000
+                                </div>
+                                <p class="mb-0">
+                                    Khách hàng
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="info-content media">
+                        <div class="info-icon">
+                            <img src="./images/icon-administration-1.png" alt="">
+                        </div>
+                        <div class="media-body">
+                            <p class="text">Được tin tưởng bởi</p>
+                            <div class="content d-flex">
+                                <div class="count">
+                                    230,000
+                                </div>
+                                <p class="mb-0">
+                                    Khách hàng
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <h2 class="block-title">Thiết kế website tại Sapo, chúng tôi có...</h2>
+        </div>
+        <div class="container">
+            <div class="box-tab">
+                <ul class="nav nav-pills mb-3 justify-content-between" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-home-tab" data-toggle="pill" data-target="#pills-home"
+                            type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                            <div class="card card-tab">
+                                <div class="icon-tab">
+                                    <img src="./images/solution-logo-1.png" alt="">
+                                    <img src="./images/solution-logo-1-blur.png" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <span class="card-text">400+ giao diện đẹp</span>
+                                </div>
+                            </div>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-profile-tab" data-toggle="pill" data-target="#pills-profile"
+                            type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+                            <div class="card card-tab">
+                                <div class="icon-tab">
+                                    <img src="./images/solution-logo-1.png" alt="">
+                                    <img src="./images/solution-logo-1-blur.png" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <span class="card-text">400+ giao diện đẹp</span>
+                                </div>
+                            </div>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-contact-tab" data-toggle="pill" data-target="#pills-contact"
+                            type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
+                            <div class="card card-tab">
+                                <div class="icon-tab">
+                                    <img src="./images/solution-logo-1.png" alt="">
+                                    <img src="./images/solution-logo-1-blur.png" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <span class="card-text">400+ giao diện đẹp</span>
+                                </div>
+                            </div>
+
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-contact-tab" data-toggle="pill" data-target="#pills-contact"
+                            type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
+                            <div class="card card-tab">
+                                <div class="icon-tab">
+                                    <img src="./images/solution-logo-1.png" alt="">
+                                    <img src="./images/solution-logo-1-blur.png" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <span class="card-text">400+ giao diện đẹp</span>
+                                </div>
+                            </div>
+
+                        </button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                        aria-labelledby="pills-home-tab">
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <div class="tab-text">
+                                    <h3>Giao diện chuẩn SEO, đa dạng ngành nghề, nội dung</h3>
+                                    <div class="list-solution d-flex flex-column">
+                                        <div class="item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                                <path
+                                                    d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
+                                            </svg>
+                                            <p>
+                                                Mọi giao diện tại Sapo được thiết kế hiện đại, tối ưu chất lượng dựa
+                                                theo tiêu chí xếp hạng và đánh giá của các công cụ tìm kiếm
+                                            </p>
+                                        </div>
+                                        <div class="item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                                <path
+                                                    d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
+                                            </svg>
+                                            <p>
+                                                Dịch vụ thiết kế website Sapo cung cấp giao diện đảm bảo UX-UI đáp ứng
+                                                hầu hết tất cả nhu cầu của khách hàng với hơn 50 ngành nghề, lĩnh vực
+                                                khác nhau.
+                                            </p>
+                                        </div>
+                                        <div class="item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                                <path
+                                                    d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
+                                            </svg>
+                                            <p>
+                                                Tất cả các giao diện sử dụng công nghệ Responsive, đồng bộ hiển thị tất
+                                                cả thiết bị: PC, Laptop, Table & Mobile.
+                                            </p>
+                                        </div>
+                                        <a class="btn-registration CTA-home mt-5">
+                                            <span class="text">Dùng thử miễn phí</span>
+                                            <span class="icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                                                    fill="currentColor" class="bi bi-arrow-right-short"
+                                                    viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd"
+                                                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8">
+                                                    </path>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <img src="./images/thiet-ke-giao-dien-website-chuan-seo.png" alt="" class="tab-img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        ...</div>
+                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                        ...</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="administration">
+        <div class="container">
+            <div class="block-subtext text-center">Website Sapo</div>
+            <h2 class="block-title text-dark mt-2 mb-5">Quản trị đơn giản, tự điều chỉnh web dễ dàng</h2>
+            <div class="row mt-5">
+                <div class="col-lg-6">
+                    <img src="./images/quan-tri-websitedon-gian.png" alt="" class="administration-img">
+                </div>
+                <div class="col-lg-6">
+
+                    <div class="grid-container">
+                        <div class="box-administration">
+                            <div class="icon">
+                                <img src="./images/icon-administration-1.png" alt="Hệ thống quản lý rõ ràng"
+                                    class="fade show">
+                            </div>
+                            <h3 class="title-administration">
+                                Hệ thống quản lý rõ ràng,<br class="d-lg-none d-xl-block"> thao tác ngắn gọn
+                            </h3>
+                        </div>
+                        <div class="box-administration">
+                            <div class="icon">
+                                <img src="./images/icon-administration-2.png" alt="Hệ thống quản lý rõ ràng"
+                                    class="fade show">
+                            </div>
+                            <h3 class="title-administration">
+                                Tự điều chỉnh giao diện<br class="d-lg-none d-xl-block"> theo ý muốn
+                            </h3>
+                        </div>
+                        <div class="box-administration">
+                            <div class="icon">
+                                <img src="./images/icon-administration-3.png" alt="Hệ thống quản lý rõ ràng"
+                                    class="fade show">
+                            </div>
+                            <h3 class="title-administration">
+                                Website tự động nâng cấp,<br class="d-lg-none d-xl-block"> miễn phí bảo trì
+                            </h3>
+                        </div>
+                        <div class="box-administration">
+                            <div class="icon">
+                                <img src="./images/icon-administration-4.png" alt="Hệ thống quản lý rõ ràng"
+                                    class="fade show">
+                            </div>
+                            <h3 class="title-administration">
+                                Dễ dàng tự thêm/bớt<br class="d-lg-none d-xl-block"> các tính năng
+                            </h3>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="themes_store">
+        <div class="container">
+            <h2 class="title-reason text-dark mb-2">Kho giao diện đẹp, đáp ứng mọi nhu cầu kinh doanh</h2>
+            <div class="title-reason-subtext text-center">Sapo liên tục cập nhật các mẫu giao diện cho tất cả ngành nghề
+            </div>
+
+            <div class="main-container">
+                <!-- Category Navigation -->
+                <div class="category-tabs">
+                    <a href="#" class="tab-item" data-category="new">Giao diện mới</a>
+                    <a href="#" class="tab-item" data-category="free">Giao diện miễn phí</a>
+                    <a href="#" class="tab-item active" data-category="under1m">Dưới 1 triệu</a>
+                    <a href="#" class="tab-item" data-category="popular">Được mua nhiều</a>
+                </div>
+
+                <!-- Templates Section -->
+                <div class="templates-section">
+                    <!-- Navigation Buttons -->
+                    <button class="nav-btn prev">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="nav-btn next">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+
+                    <!-- Template Cards Grid -->
+                    <div class="template-grid">
+                        <!-- Dualeo-x Template -->
+                        <div class="template-card card-1">
+                            <div class="template-preview">
+                                <div class="preview-content">
+                                    <img src="https://www.sapo.vn/Themes/Portal/Default/StylesV2/images/landingsite/ld-websitedesign/professionalwebsite/template-mendover.jpg?v=3"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="template-info">
+                                <h3 class="template-name">Dualeo-x</h3>
+                                <p class="template-category">Phù hợp cho siêu thị</p>
+                                <div class="template-price">1,500,000 đ</div>
+                                <div class="template-actions">
+                                    <button class=" btn-preview">Xem thử</button>
+                                    <button class="btn-details">Chi tiết</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sea Fruits Template -->
+                        <div class="template-card card-2">
+                            <div class="template-preview">
+                                <div class="preview-content">
+                                    <img src="./images/template-dua-leo-x.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="template-info">
+                                <h3 class="template-name">Sea Fruits</h3>
+                                <p class="template-category">Phù hợp cho siêu thị</p>
+                                <div class="template-price">1,500,000 đ</div>
+                                <div class="template-actions">
+                                    <button class="btn-preview">Xem thử</button>
+                                    <button class="btn-details">Chi tiết</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Box Home Template -->
+                        <div class="template-card card-3">
+                            <div class="template-preview">
+                                <div class="preview-content">
+                                    <img src="https://www.sapo.vn/Themes/Portal/Default/StylesV2/images/landingsite/ld-websitedesign/professionalwebsite/template-honey-bee-farm.jpg?v=3"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="template-info">
+                                <h3 class="template-name">Box Home</h3>
+                                <p class="template-category">Phù hợp cho nội thất</p>
+                                <div class="template-price">800,000 đ</div>
+                                <div class="template-actions">
+                                    <button class="btn-preview">Xem thử</button>
+                                    <button class=" btn-details">Chi tiết</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- View More Section -->
+                <div class="view-more">
+                    <a href="#" class="view-more-link">
+                        Xem thêm giao diện
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="speed-website">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-12">
+                    <h2 class="block-title">Tăng tốc cho website với kho ứng dụng mạnh mẽ của Sapo</h2>
+                    <div class="list-solution d-flex flex-column">
+                        <div class="item text-white">
+                            <p class="text-white">
+                                Mọi giao diện tại Sapo được thiết kế hiện đại, tối ưu chất lượng dựa theo tiêu chí xếp
+                                hạng và đánh giá của các công cụ tìm kiếm
+                            </p>
+                        </div>
+                        <div class="item text-white">
+                            <p class="text-white">
+                                Dịch vụ thiết kế website Sapo cung cấp giao diện đảm bảo UX-UI đáp ứng hầu hết tất cả
+                                nhu cầu của khách hàng với hơn 50 ngành nghề, lĩnh vực khác nhau.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <img class="w-100"
+                        src="https://www.sapo.vn/Themes/Portal/Default/StylesV2/images/landingsite/ld-websitedesign/professionalwebsite/kho-ung-dung-sapo.png?v=2"
+                        alt="">
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+    <section class="module-price-web">
+        <div class="container">
+            <div class="pricing-container">
+                <!-- Main Title -->
+                <h1 class="main-title">Bảng giá dịch vụ thiết kế website Sapo</h1>
+
+                <!-- Pricing Cards -->
+                <div class="pricing-cards">
+                    <!-- Web Standard Plan -->
+                    <div class="pricing-card web-standard">
+                        <div class="card-header">
+                            <div class="plan-icon">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <h2 class="plan-name">Web Standard</h2>
+                            <div class="plan-price">499.000<sup>đ</sup></div>
+                            <div class="price-period">/tháng</div>
+                        </div>
+                        <div class="card-body">
+                            <div class="plan-description">
+                                Website bán hàng chuyên nghiệp
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <button class="try-button">Dùng thử</button>
+                        </div>
+                    </div>
+
+                    <!-- Omni Plan -->
+                    <div class="pricing-card omni">
+                        <div class="popular-badge">Phổ biến</div>
+                        <div class="card-header">
+                            <div class="plan-icon">
+                                <i class="fas fa-store"></i>
+                            </div>
+                            <h2 class="plan-name">Omni</h2>
+                            <div class="plan-price">899.000<sup>đ</sup></div>
+                            <div class="price-period">/tháng</div>
+                        </div>
+                        <div class="card-body">
+                            <div class="plan-description">
+                                Quản lý và bán hàng hợp kênh
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <button class="try-button">Dùng thử</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer Link -->
+                <div class="footer-link">
+                    <a href="#">
+                        Chi tiết giá thiết kế web tại Sapo
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="solution">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-5 col-12 col">
+                    <div class="right-title">
+                        <h2>Thiết kế website chuyên nghiệp theo ngành nghề</h2>
+                        <p>Những mẫu website đẹp, phù hợp với ngành nghề, lĩnh vực bạn quan tâm</p>
+                        <a class="btn-registration CTA-home mt-5">
+                            <span class="text">Dùng thử miễn phí</span>
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                                    class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8">
+                                    </path>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-7 col-12 col">
+                    <div class="list-solution list-solution-1">
+                        <div class="items item-1"
+                            onclick="window.open('https://themes.sapo.vn/collections/website-my-pham', '_blank')">
+                            <img src="https://www.sapo.vn/Themes/Portal/Default/StylesV2/images/landingsite/ld-websitedesign/professionalwebsite/img-category-1.png"
+                                alt="Giao diện website mỹ phẩm" class="fade show">
+                            <div class="title">Mỹ phẩm</div>
+                            <a href="https://themes.sapo.vn/collections/website-my-pham" title="Xem chi tiết"
+                                target="_blank">
+                                Xem chi tiết
+                            </a>
+                        </div>
+                        <div class="items item-2"
+                            onclick="window.open('https://themes.sapo.vn/collections/website-thuc-pham', '_blank')">
+                            <img src="https://www.sapo.vn/Themes/Portal/Default/StylesV2/images/landingsite/ld-websitedesign/professionalwebsite/img-category-2.png"
+                                alt="Giao diện website thực phẩm" class="fade show">
+                            <div class="title">Thực phẩm</div>
+                            <a href="https://themes.sapo.vn/collections/website-thuc-pham" title="Xem chi tiết"
+                                target="_blank">
+                                Xem chi tiết
+                            </a>
+                        </div>
+                    </div>
+                    <div class="list-solution list-solution-1">
+                        <div class="items item-3"
+                            onclick="window.open('https://themes.sapo.vn/collections/website-doanh-nghiep', '_blank')">
+                            <img src="https://www.sapo.vn/Themes/Portal/Default/StylesV2/images/landingsite/ld-websitedesign/professionalwebsite/img-category-3.png"
+                                alt="Giao diện website doanh nghiệp" class="fade show">
+                            <div class="title">Doanh nghiệp</div>
+                            <a href="https://themes.sapo.vn/collections/website-doanh-nghiep" title="Xem chi tiết"
+                                target="_blank">
+                                Xem chi tiết
+                            </a>
+                        </div>
+                        <div class="items item-4"
+                            onclick="window.open('https://themes.sapo.vn/collections/website-thoi-trang', '_blank')">
+                            <img src="https://www.sapo.vn/Themes/Portal/Default/StylesV2/images/landingsite/ld-websitedesign/professionalwebsite/img-category-4.png"
+                                alt="Giao diện website thời trang" class="fade show">
+                            <div class="title">Thời trang</div>
+                            <a href="https://themes.sapo.vn/collections/website-thoi-trang" title="Xem chi tiết"
+                                target="_blank">
+                                Xem chi tiết
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="list-solution list-solution-2">
+                <div class="items"
+                    onclick="window.open('https://themes.sapo.vn/collections//website-cong-nghe', '_blank')">
+                    <img src="https://www.sapo.vn/Themes/Portal/Default/StylesV2/images/landingsite/ld-websitedesign/professionalwebsite/img-category-5.png"
+                        alt="Giao diện website công nghệ" class="fade show">
+                    <div class="title">Công nghệ</div>
+                    <a href="https://themes.sapo.vn/collections//website-cong-nghe" title="Xem chi tiết"
+                        target="_blank">
+                        Xem chi tiết
+                    </a>
+                </div>
+                <div class="items"
+                    onclick="window.open('https://themes.sapo.vn/collections//website-nha-hang-khach-san', '_blank')">
+                    <img src="https://www.sapo.vn/Themes/Portal/Default/StylesV2/images/landingsite/ld-websitedesign/professionalwebsite/img-category-6.png"
+                        alt="Giao diện website khách sạn" class="fade show">
+                    <div class="title">Khách sạn</div>
+                    <a href="https://themes.sapo.vn/collections//website-nha-hang-khach-san" title="Xem chi tiết"
+                        target="_blank">
+                        Xem chi tiết
+                    </a>
+                </div>
+                <div class="items"
+                    onclick="window.open('https://themes.sapo.vn/collections/website-do-gia-dung', '_blank')">
+                    <img src="https://www.sapo.vn/Themes/Portal/Default/StylesV2/images/landingsite/ld-websitedesign/professionalwebsite/img-category-7.png"
+                        alt="Giao diện website đồ gia dụng" class="fade show">
+                    <div class="title">Gia dụng</div>
+                    <a href="https://themes.sapo.vn/collections/website-do-gia-dung" title="Xem chi tiết"
+                        target="_blank">
+                        Xem chi tiết
+                    </a>
+                </div>
+
+                <div class="items"
+                    onclick="window.open('https://themes.sapo.vn/collections/website-bat-dong-san', '_blank')">
+                    <img src="https://www.sapo.vn/Themes/Portal/Default/StylesV2/images/landingsite/ld-websitedesign/professionalwebsite/img-category-8.png"
+                        alt="Giao diện website bất động sản" class="fade show">
+                    <div class="title">Bất động sản</div>
+                    <a href="https://themes.sapo.vn/collections/website-bat-dong-san" title="Xem chi tiết"
+                        target="_blank">
+                        Xem chi tiết
+                    </a>
+                </div>
+
+                <div class="items"
+                    onclick="window.open('https://themes.sapo.vn/collections/website-noi-that', '_blank')">
+                    <img src="https://www.sapo.vn/Themes/Portal/Default/StylesV2/images/landingsite/ld-websitedesign/professionalwebsite/img-category-9.png"
+                        alt="Giao diện website nội thất" class="fade show">
+                    <div class="title">Nội thất</div>
+                    <a href="https://themes.sapo.vn/collections/website-noi-that" title="Xem chi tiết" target="_blank">
+                        Xem chi tiết
+                    </a>
+                </div>
+                <div class="items"
+                    onclick="window.open('https://themes.sapo.vn/collections/website-van-phong-pham', '_blank')">
+                    <img src="https://www.sapo.vn/Themes/Portal/Default/StylesV2/images/landingsite/ld-websitedesign/professionalwebsite/img-category-10.png"
+                        alt="Giao diện website văn phòng phẩm" class="fade show">
+                    <div class="title">Sách - VP phẩm</div>
+                    <a href="https://themes.sapo.vn/collections/website-van-phong-pham" title="Xem chi tiết"
+                        target="_blank">
+                        Xem chi tiết
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="customer-faq">
+        <div class="container">
+            <div class="title-reason-subtext text-center mb-2">Thiết kế website không khó</div>
+            <h2 class="title-reason text-dark ">+230,000 khách hàng đã tin tưởng</h2>
+        </div>
+        <div class="marquee">
+            <a href="">
+                <img src="./images/logo-4.png" alt="">
+            </a>
+            <a href="">
+                <img src="./images/logo-4.png" alt="">
+            </a>
+            <a href="">
+                <img src="./images/logo-4.png" alt="">
+            </a>
+            <a href="">
+                <img src="./images/logo-4.png" alt="">
+            </a>
+            <a href="">
+                <img src="./images/logo-4.png" alt="">
+            </a>
+            <a href="">
+                <img src="./images/logo-4.png" alt="">
+            </a>
+            <a href="">
+                <img src="./images/logo-4.png" alt="">
+            </a>
+            <a href="">
+                <img src="./images/logo-4.png" alt="">
+            </a>
+            <a href="">
+                <img src="./images/logo-4.png" alt="">
+            </a>
+            <a href="">
+                <img src="./images/logo-4.png" alt="">
+            </a>
+            <a href="">
+                <img src="./images/logo-4.png" alt="">
+            </a>
+        </div>
+    </section>
     <footer>
         <div class="container">
             <div class="bg-register">
@@ -88,5 +735,65 @@
         </div>
     </footer>
 </body>
+<script>
+
+
+    document.querySelectorAll('.tab-item').forEach(tab => {
+        tab.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            // Remove active class from all tabs
+            document.querySelectorAll('.tab-item').forEach(t => t.classList.remove('active'));
+
+            // Add active class to clicked tab
+            this.classList.add('active');
+
+            const category = this.dataset.category;
+            console.log('Switched to category:', category);
+        });
+    });
+    $('.block-content').slick({
+        dots: false,
+        infinite: false,
+        arrows: false,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
+    });
+    $('.marquee').marquee({
+        direction: 'left',
+        duration: 9000,
+        duplicated: true,
+        startVisible: true
+    });
+</script>
 
 </html>

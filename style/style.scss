@@ -1,5 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 $color-main :#3ae780;
+$color-main2: #1B263B;
+$white : #fff;
+$black : #000;
+$backgound-CTA: #FFA500;
+$BlueAccent: #1E3A8A;
+
+@mixin letterSpacing ($value , $value2) {
+    .slick-slide {
+        margin: 0 $value;
+    }
+
+    .slick-list {
+        margin: 0 $value2;
+    }
+}
 
 @mixin maxWidth($value) {
     @media (max-width: $value) {
@@ -97,7 +112,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 9;
-    background: #fff;
+    background: $color-main2;
 }
 
 .logo {
@@ -117,7 +132,7 @@ header {
         padding-left: 16px;
 
         a {
-            color: #000;
+            color: $white;
 
             &:hover {
                 color: $color-main;
@@ -126,7 +141,9 @@ header {
 
         &:last-child {
             .account-btn {
-                background: linear-gradient(to right, #2ad38b, #0cceb0);
+                color: $white;
+                border: 0;
+                background: $backgound-CTA;
             }
         }
     }
@@ -243,9 +260,1030 @@ footer {
         position: absolute;
         right: 30px;
         top: 10px;
-        background: linear-gradient(272.65deg,#0cceb0 20.05%,#2ad38b 84.62%);
-        svg{
+        background: linear-gradient(272.65deg, #0cceb0 20.05%, #2ad38b 84.62%);
+
+        svg {
             color: #fff;
         }
+    }
+}
+
+.banner {
+    padding-bottom: 50px;
+    background: linear-gradient(180deg, #e1efff 25.71%, rgba(255, 255, 255, 0) 95.92%);
+}
+
+.banner-title {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 56px;
+    color: $BlueAccent;
+    margin-bottom: 16px;
+}
+
+.banner-subtext {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    margin-bottom: 40px;
+    color: $BlueAccent;
+}
+
+.banner-image {
+    width: 80%;
+    object-fit: contain;
+    aspect-ratio: 1;
+    animation: floatUpDown 3s ease-in-out infinite;
+}
+
+@keyframes floatUpDown {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.CTA-home {
+    background: $backgound-CTA;
+    color: $white;
+    width: max-content;
+    gap: 20px;
+
+    &:hover {
+        .icon {
+            transform: translateX(13px);
+        }
+    }
+
+    .icon {
+        background: $white;
+        position: unset;
+
+        svg {
+            color: $black;
+        }
+    }
+}
+
+.info-section {
+    height: 900px;
+    margin-top: 40px;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 68%;
+        top: 5%;
+        background-image: url(https://www.sapo.vn/Themes/Portal/Default/StylesV2/images/landingsite/ld-websitedesign/professionalwebsite/bg-tab-solution.jpg);
+    }
+
+    // background: #1B263B;
+}
+
+.block-content {
+    @include letterSpacing(10px, -10px);
+    margin-bottom: 70px;
+
+    .text {
+        font-weight: 300;
+        font-style: italic;
+        font-size: 16px;
+        line-height: 18.75px;
+        margin-bottom: 5px;
+        color: $white;
+    }
+
+    .content {
+        color: $white;
+        font-size: 30px;
+        font-weight: 700;
+        align-items: center;
+
+        p {
+            font-weight: 500;
+            line-height: 22px;
+            font-size: 16px;
+            margin-left: 10px;
+        }
+    }
+
+    .count {
+        font-weight: 700;
+    }
+
+    .info-icon {
+        margin-right: 30px;
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        background-repeat: no-repeat;
+        background-position: center;
+        box-shadow: 4px 4px 12px 0 rgba(0, 52, 124, .16);
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 90%;
+            object-fit: contain;
+            aspect-ratio: 1.5;
+        }
+    }
+}
+
+.info-content {
+    padding: 17px 40px;
+    border-radius: 20px;
+    background: linear-gradient(180deg, #a1abdc 0%, #2d429b 100%);
+}
+
+.block-title {
+    text-align: center;
+    margin-bottom: 32px;
+    color: $white;
+    position: relative;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 54px;
+}
+
+//
+.box-tab {
+    position: relative;
+    background: $white;
+    border-radius: 15px;
+    padding: 30px 70px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.icon-tab {
+    img {
+        width: 100px;
+        margin: 0 auto;
+
+        &:first-child {
+            display: none;
+        }
+
+        &:last-child {
+            display: block;
+        }
+    }
+}
+
+.nav-link {
+    &:hover {
+        .icon-tab {
+            img {
+                width: 100px;
+
+                &:first-child {
+                    display: block;
+                }
+
+                &:last-child {
+                    display: none;
+                }
+            }
+        }
+
+        .card-text {
+            color: $black;
+        }
+
+        .card {
+
+            &::before {
+                background: #1B263B;
+            }
+        }
+
+    }
+
+    &.active {
+        .icon-tab {
+            img {
+                width: 100px;
+
+                &:first-child {
+                    display: block;
+                }
+
+                &:last-child {
+                    display: none;
+                }
+            }
+        }
+
+    }
+}
+
+.card {
+    border: 0 !important;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: $black !important;
+    background-color: $white !important;
+
+    .card {
+        border: 0;
+
+        &::before {
+            background: #1B263B;
+        }
+    }
+
+    .card-text {
+        color: $black;
+    }
+}
+
+.card-tab {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        background: #f1f1f1;
+        height: 4px;
+        width: 100%;
+        display: block;
+        border-radius: 4px;
+        top: 71px;
+        left: 0;
+
+    }
+}
+
+.card-text {
+    display: block;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 26px;
+    color: #aeaeae;
+    position: relative;
+    padding-top: 12px;
+}
+
+.tab-text {
+    h3 {
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 40px;
+        color: #000;
+        margin-bottom: 32px;
+    }
+}
+
+.list-solution .item {
+    position: relative;
+    margin-bottom: 24px;
+    padding-left: 36px;
+    padding-right: 44px;
+
+    svg {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        left: 0;
+        top: 3px;
+        color: #3ae780;
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        color: #000;
+        margin-bottom: 0;
+        text-align: justify;
+    }
+}
+
+.tab-img {
+    width: 100%;
+    object-fit: contain;
+    // margin-top: -30px;
+    // margin-left: -35px;
+}
+
+.block-subtext {
+    color: #000;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 32px;
+}
+
+.administration {
+    padding: 120px 0 0;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 25.71%, #e1efff 95.92%);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 30px;
+    margin: 20px auto;
+    // padding: 10px;
+}
+
+.grid-item {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.administration-img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.box-administration {
+    padding: 30px;
+    background: #062398;
+    height: 180px;
+    position: relative;
+    text-align: center;
+    border-radius: 12px;
+
+    &:before {
+        content: "";
+        background: url(https://www.sapo.vn/Themes/Portal/Default/StylesV2/images/landingsite/ld-websitedesign/professionalwebsite/bg-administration.png?v=2) no-repeat top center;
+        width: 188px;
+        height: 63px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .icon {
+        position: relative;
+    }
+}
+
+.title-administration {
+    margin-top: 15px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #fff;
+}
+
+.title-reason {
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 54px;
+    margin: 0;
+    color: #000;
+    text-align: center;
+}
+
+.themes_store {
+    padding: 60px 0 60px;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+.title-reason-subtext {
+    color: #000;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 32px;
+}
+
+
+
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Navigation Tabs - exact match with arrow */
+.category-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    background: transparent;
+    gap: 0;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background: #ccc;
+        bottom: -1px;
+    }
+}
+
+.tab-item {
+    background: transparent;
+    border: none;
+    padding: 11px 32px;
+    color: #6c757d;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    position: relative;
+    border-bottom: 2px solid transparent;
+}
+
+.tab-item.active {
+    background: #007bff;
+    color: white;
+    border-radius: 8px 8px 0 0;
+    position: relative;
+}
+
+.tab-item.active::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #007bff;
+}
+
+.tab-item:hover:not(.active) {
+    color: #495057;
+}
+
+/* Templates Container with Navigation */
+.templates-section {
+    position: relative;
+}
+
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: white;
+    border: 1px solid #dee2e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+    background: #f8f9fa;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-btn.prev {
+    left: -20px;
+}
+
+.nav-btn.next {
+    right: -20px;
+}
+
+/* Template Cards - exact styling */
+.template-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.template-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 1px solid #f0f0f0;
+    cursor: pointer;
+
+    &:hover {
+        .template-preview img {
+            object-position: bottom;
+        }
+    }
+}
+
+.template-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.template-preview {
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+    background: #f8f9fa;
+}
+
+.template-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    transition: all 8s;
+}
+
+/* Card 1 - Dualeo-x (Green theme) */
+.card-1 .template-preview {
+    background: linear-gradient(135deg, #4CAF50 0%, #66BB6A 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.preview-content {
+    width: 100%;
+    height: 100%;
+}
+
+/* Card 2 - Sea Fruits (Colorful theme) */
+.card-2 .template-preview {
+    background: linear-gradient(135deg, #FF6B6B 0%, #4ECDC4 50%, #45B7D1 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Card 3 - Box Home (Yellow theme) */
+.card-3 .template-preview {
+    background: linear-gradient(135deg, #FFD93D 0%, #FF9800 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.template-info {
+    padding: 20px;
+}
+
+.template-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 6px;
+}
+
+.template-category {
+    font-size: 14px;
+    color: #7f8c8d;
+    margin-bottom: 16px;
+}
+
+.template-price {
+    font-size: 20px;
+    font-weight: 700;
+    color: #27ae60;
+    margin-bottom: 20px;
+}
+
+.template-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    background-color: unset !important;
+}
+
+.btn-preview {
+    flex: 1;
+    background: #27ae60;
+    border: none;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-preview:hover {
+    background: #219a52;
+    color: white;
+}
+
+.btn-details {
+    flex: 1;
+    background: transparent;
+    border: 2px solid #27ae60;
+    color: #27ae60;
+    padding: 8px 16px;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-details:hover {
+    background: #27ae60;
+    color: white;
+}
+
+/* View More Section */
+.view-more {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.view-more-link {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+.view-more-link:hover {
+    color: #0056b3;
+    transform: translateX(4px);
+}
+
+
+.speed-website {
+    padding-top: 92px;
+    padding-bottom: 50px;
+    position: relative;
+    background: url(https://www.sapo.vn/Themes/Portal/Default/StylesV2/images/landingsite/ld-websitedesign/professionalwebsite/bg-speed-website.jpg) no-repeat top center;
+
+    img {
+        margin-top: -57px;
+    }
+}
+
+.pricing-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.main-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 60px;
+}
+
+.pricing-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.pricing-card {
+    padding-top: 30px;
+    background: white;
+    border-radius: 20px;
+    padding-bottom: 35px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    // overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease;
+    border: 2px solid #f0f0f0;
+
+    .card-body {
+        padding: 0;
+    }
+
+    .card-header,
+    .card-footer {
+        background: none;
+    }
+
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Popular Badge */
+.popular-badge {
+    position: absolute;
+    top: 0;
+    right: -10px;
+    background: #6c5ce7;
+    color: white;
+    padding: 8px 15px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border-radius: 0 20px 0 15px;
+    z-index: 10;
+}
+
+.popular-badge::before {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-left: 8px solid #5b4cdb;
+    border-bottom: 8px solid transparent;
+}
+
+/* Card Header */
+.card-header {
+    padding: 40px 30px 20px;
+    text-align: center;
+    background: white;
+}
+
+.plan-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+
+.web-standard .plan-icon {
+    background: linear-gradient(135deg, #74b9ff, #0984e3);
+}
+
+.omni .plan-icon {
+    background: linear-gradient(135deg, #a29bfe, #6c5ce7);
+}
+
+.plan-icon i {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.plan-name {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #2d3436;
+    margin-bottom: 20px;
+}
+
+.plan-price {
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.web-standard .plan-price {
+    color: #0984e3;
+}
+
+.omni .plan-price {
+    color: #6c5ce7;
+}
+
+.price-period {
+    font-size: 1.1rem;
+    color: #636e72;
+    font-weight: 500;
+}
+
+/* Card Body */
+.card-body {
+    padding: 0;
+}
+
+.plan-description {
+    background: #f8fffe;
+    padding: 20px 30px;
+    text-align: center;
+    font-size: 1rem;
+    color: #2d3436;
+    font-weight: 500;
+    border-top: 1px solid #e9ecef;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.omni .plan-description {
+    background: #f8f7ff;
+}
+
+/* Card Footer */
+.card-footer {
+    padding: 30px;
+    background: white;
+    text-align: center;
+    border: none;
+}
+
+.try-button {
+    background: linear-gradient(135deg, #00b894, #00a085);
+    border: none;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 184, 148, 0.3);
+    width: 200px;
+    margin-top: 20px;
+}
+
+.omni .try-button {
+    background: linear-gradient(135deg, #a29bfe, #6c5ce7);
+    box-shadow: 0 4px 15px rgba(108, 92, 231, 0.3);
+}
+
+.try-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 184, 148, 0.4);
+}
+
+.omni .try-button:hover {
+    box-shadow: 0 8px 25px rgba(108, 92, 231, 0.4);
+}
+
+/* Footer Link */
+.footer-link {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer-link a {
+    color: #0984e3;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+.footer-link a:hover {
+    color: #0756b3;
+    transform: translateX(5px);
+}
+
+.module-price-web {
+    padding-bottom: 70px;
+    padding-top: 100px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 25.71%, #e1efff 95.92%);
+}
+
+.solution {
+    padding-top: 76px;
+    padding-bottom: 49px;
+    background: url(https://www.sapo.vn/Themes/Portal/Default/StylesV2/images/landingsite/ld-websitedesign/professionalwebsite/bg-solution.jpg);
+
+    .right-title {
+        height: 413px;
+        padding-right: 82px;
+        padding-left: 31px;
+        padding-top: 24px;
+        color: rgb(255, 255, 255);
+        text-align: left;
+        margin-bottom: 0px;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 12px;
+
+        h2 {
+            color: rgb(255, 255, 255);
+            margin-bottom: 20px;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 54px;
+        }
+    }
+}
+
+.list-solution {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 15px;
+    gap: 15px;
+
+    .items {
+        position: relative;
+        cursor: pointer;
+        border-radius: 12px;
+        overflow: hidden;
+
+        &:before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100px;
+            bottom: 0px;
+            background: linear-gradient(354.94deg, rgb(255, 255, 255) 20%, rgba(255, 255, 255, 0) 70%);
+        }
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            aspect-ratio: 2;
+        }
+
+        .title {
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+            font-size: 23px;
+            font-weight: 700;
+            line-height: 32px;
+            color: rgb(0, 0, 0);
+        }
+
+        a {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            min-width: 124px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: center;
+            color: rgb(0, 0, 0);
+            z-index: 9;
+            display: none;
+            padding: 8px 0px;
+            border-radius: 4px;
+            background: rgb(255, 255, 255);
+        }
+
+        &::after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            display: none;
+            background: rgba(0, 0, 0, 0.55);
+        }
+
+        &:hover {
+            a {
+                display: block;
+            }
+
+            &::after {
+                content: "";
+                display: block;
+            }
+        }
+    }
+}
+
+
+.list-solution-2 {
+    grid-template-columns: repeat(6, 1fr);
+    margin-bottom: 0px;
+}
+.customer-faq {
+    padding-top: 100px;
+    padding-bottom: 150px;
+    background: linear-gradient(rgb(225, 239, 255) 0%, rgb(255, 255, 255) 71.28%);
+}
+.marquee{
+    margin-top: 70px;
+    overflow: hidden;
+    img{
+        width: 150px;
+        object-fit: contain;
+        aspect-ratio: 2;
+        margin-left:50px ;
     }
 }
