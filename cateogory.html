@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css"
+        integrity="sha512-rt/SrQ4UNIaGfDyEXZtNcyWvQeOq0QLygHluFQcSjaGB04IxWhal71tKuzP6K8eYXYB6vJV4pHkXcmFGGQ1/0w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/js/bootstrap.min.js"
+        integrity="sha512-7rusk8kGPFynZWu26OKbTeI+QPoYchtxsmPeBqkHIEXJxeun4yJ4ISYe7C6sz9wdxeE1Gk3VxsIWgCZTc+vX3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jQuery.Marquee/1.5.0/jquery.marquee.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 d-flex align-items-center">
+                    <a href="/">
+                        <img src="./images/Sapo-logo.svg" alt="" class="logo">
+                    </a>
+                </div>
+                <div class="col-lg-9">
+                    <ul class="ul-reset ul-menu">
+                        <li>
+                            <a href="">Web bán hàng</a>
+                        </li>
+                        <li>
+                            <a href="">Web doanh nghiệp</a>
+                        </li>
+                        <li>
+                            <a href="">Bảng giá</a>
+                        </li>
+                        <li>
+                            <a href="">Giao diện</a>
+                        </li>
+                        <li>
+                            <a href="">Ứng dụng</a>
+                        </li>
+                        <li>
+                            <a href="">Khách hàng</a>
+                        </li>
+                        <li>
+                            <a class="account-btn" href="">Đăng ký</a>
+                        </li>
+                        <li>
+                            <a class="account-btn" href="">Đăng nhập</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <section class="search-container">
+        <div class="container">
+            <h1 class="search">Mẫu giao diện bán <span>Thời trang - Trang sức</span> mới nhất</h1>
+        </div>
+    </section>
+    <section class="layout-themes">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-12 sidebar-themes dqdt-sidebar">
+                    <aside>
+                        <div class="category-header">
+                            <div class="hamburger-icon">
+                                <i class="fas fa-bars"></i>
+                            </div>
+                            <h3 class="category-title">Danh mục</h3>
+                        </div>
+                        <ul class="category-list">
+                            <li class="category-item">
+                                <a href="#" class="category-link" data-category="all">
+                                    <div class="category-radio"></div>
+                                    <span class="category-text">Tất cả</span>
+                                </a>
+                            </li>
+
+                            <li class="category-item active">
+                                <a href="#" class="category-link" data-category="fashion">
+                                    <div class="category-radio"></div>
+                                    <span class="category-text">Thời trang - Trang sức</span>
+                                </a>
+                            </li>
+
+                            <li class="category-item">
+                                <a href="#" class="category-link" data-category="cosmetics">
+                                    <div class="category-radio"></div>
+                                    <span class="category-text">Mỹ phẩm - Làm đẹp</span>
+                                </a>
+                            </li>
+
+                            <li class="category-item">
+                                <a href="#" class="category-link" data-category="food">
+                                    <div class="category-radio"></div>
+                                    <span class="category-text">Thực phẩm - Nhà hàng</span>
+                                </a>
+                            </li>
+
+                            <li class="category-item">
+                                <a href="#" class="category-link" data-category="household">
+                                    <div class="category-radio"></div>
+                                    <span class="category-text">Đồ gia dụng - Sinh hoạt</span>
+                                </a>
+                            </li>
+
+                            <li class="category-item">
+                                <a href="#" class="category-link" data-category="interior">
+                                    <div class="category-radio"></div>
+                                    <span class="category-text">Nội thất - Trang trí</span>
+                                </a>
+                            </li>
+
+                            <li class="category-item">
+                                <a href="#" class="category-link" data-category="office">
+                                    <div class="category-radio"></div>
+                                    <span class="category-text">Sách - Văn phòng phẩm</span>
+                                </a>
+                            </li>
+
+                            <li class="category-item">
+                                <a href="#" class="category-link" data-category="handicraft">
+                                    <div class="category-radio"></div>
+                                    <span class="category-text">Thủ công - Mỹ nghệ - Quà tặng</span>
+                                </a>
+                            </li>
+
+                            <li class="category-item">
+                                <a href="#" class="category-link" data-category="technology">
+                                    <div class="category-radio"></div>
+                                    <span class="category-text">Công nghệ - Kỹ thuật số</span>
+                                </a>
+                            </li>
+
+                            <li class="category-item">
+                                <a href="#" class="category-link" data-category="vehicle">
+                                    <div class="category-radio"></div>
+                                    <span class="category-text">Ô tô - Xe máy</span>
+                                </a>
+                            </li>
+
+                            <li class="category-item">
+                                <a href="#" class="category-link" data-category="electronic">
+                                    <div class="category-radio"></div>
+                                    <span class="category-text">Thiết bị điện</span>
+                                </a>
+                            </li>
+
+                            <li class="category-item">
+                                <a href="#" class="category-link" data-category="sports">
+                                    <div class="category-radio"></div>
+                                    <span class="category-text">Thể thao - Dịch vụ</span>
+                                </a>
+                            </li>
+
+                            <li class="category-item">
+                                <a href="#" class="category-link" data-category="other">
+                                    <div class="category-radio"></div>
+                                    <span class="category-text">Khác</span>
+                                </a>
+                            </li>
+
+                            <li class="category-item">
+                                <a href="#" class="category-link" data-category="hotel">
+                                    <div class="category-radio"></div>
+                                    <span class="category-text">Khách sạn - Du lịch</span>
+                                </a>
+                            </li>
+
+                            <li class="category-item">
+                                <a href="#" class="category-link" data-category="realestate">
+                                    <div class="category-radio"></div>
+                                    <span class="category-text">Bất động sản - Xây dựng</span>
+                                </a>
+                            </li>
+
+                            <li class="category-item">
+                                <a href="#" class="category-link" data-category="business">
+                                    <div class="category-radio"></div>
+                                    <span class="category-text">Doanh nghiệp</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </aside>
+                </div>
+                <div class="col-lg-9">
+                    <div class="sortby-themes sort-by">
+                        <span class="title-sort">Sắp xếp theo: </span>
+                        <ul class="aside-content">
+                            <li class="filter-item li-price active" data-sort="price-asc">
+                                <span class="name-sort price-sort">Giá <i class="fa-solid fa-filter"></i></span>
+                            </li>
+                            <li class="filter-price-sort">
+                                <span>Dưới 1
+                                    triệu</span>
+                            </li>
+                            <li class="filter-item li-dis" data-sort="discount-asc">
+                                <span class="name-sort">Được mua nhiều</span>
+                            </li>
+                            <li class="filter-item li-new" data-sort="id">
+                                <span class="name-sort">Mới nhất</span>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 mb-4">
+                            <div class="template-card card-1">
+                                <div class="template-preview">
+                                    <div class="preview-content">
+                                        <img src="https://www.sapo.vn/Themes/Portal/Default/StylesV2/images/landingsite/ld-websitedesign/professionalwebsite/template-mendover.jpg?v=3"
+                                            alt="">
+                                    </div>
+                                </div>
+                                <div class="template-info">
+                                    <h3 class="template-name">Dualeo-x</h3>
+                                    <p class="template-category">Phù hợp cho siêu thị</p>
+                                    <div class="template-price">1,500,000 đ</div>
+                                    <div class="template-actions">
+                                        <button class=" btn-preview">Xem thử</button>
+                                        <button class="btn-details">Chi tiết</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
+                            <div class="template-card card-1">
+                                <div class="template-preview">
+                                    <div class="preview-content">
+                                        <img src="https://www.sapo.vn/Themes/Portal/Default/StylesV2/images/landingsite/ld-websitedesign/professionalwebsite/template-mendover.jpg?v=3"
+                                            alt="">
+                                    </div>
+                                </div>
+                                <div class="template-info">
+                                    <h3 class="template-name">Dualeo-x</h3>
+                                    <p class="template-category">Phù hợp cho siêu thị</p>
+                                    <div class="template-price">1,500,000 đ</div>
+                                    <div class="template-actions">
+                                        <button class=" btn-preview">Xem thử</button>
+                                        <button class="btn-details">Chi tiết</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
+                            <div class="template-card card-1">
+                                <div class="template-preview">
+                                    <div class="preview-content">
+                                        <img src="https://www.sapo.vn/Themes/Portal/Default/StylesV2/images/landingsite/ld-websitedesign/professionalwebsite/template-mendover.jpg?v=3"
+                                            alt="">
+                                    </div>
+                                </div>
+                                <div class="template-info">
+                                    <h3 class="template-name">Dualeo-x</h3>
+                                    <p class="template-category">Phù hợp cho siêu thị</p>
+                                    <div class="template-price">1,500,000 đ</div>
+                                    <div class="template-actions">
+                                        <button class=" btn-preview">Xem thử</button>
+                                        <button class="btn-details">Chi tiết</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
+                            <div class="template-card card-1">
+                                <div class="template-preview">
+                                    <div class="preview-content">
+                                        <img src="https://www.sapo.vn/Themes/Portal/Default/StylesV2/images/landingsite/ld-websitedesign/professionalwebsite/template-mendover.jpg?v=3"
+                                            alt="">
+                                    </div>
+                                </div>
+                                <div class="template-info">
+                                    <h3 class="template-name">Dualeo-x</h3>
+                                    <p class="template-category">Phù hợp cho siêu thị</p>
+                                    <div class="template-price">1,500,000 đ</div>
+                                    <div class="template-actions">
+                                        <button class=" btn-preview">Xem thử</button>
+                                        <button class="btn-details">Chi tiết</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
+                            <div class="template-card card-1">
+                                <div class="template-preview">
+                                    <div class="preview-content">
+                                        <img src="https://www.sapo.vn/Themes/Portal/Default/StylesV2/images/landingsite/ld-websitedesign/professionalwebsite/template-mendover.jpg?v=3"
+                                            alt="">
+                                    </div>
+                                </div>
+                                <div class="template-info">
+                                    <h3 class="template-name">Dualeo-x</h3>
+                                    <p class="template-category">Phù hợp cho siêu thị</p>
+                                    <div class="template-price">1,500,000 đ</div>
+                                    <div class="template-actions">
+                                        <button class=" btn-preview">Xem thử</button>
+                                        <button class="btn-details">Chi tiết</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
+                            <div class="template-card card-1">
+                                <div class="template-preview">
+                                    <div class="preview-content">
+                                        <img src="https://www.sapo.vn/Themes/Portal/Default/StylesV2/images/landingsite/ld-websitedesign/professionalwebsite/template-mendover.jpg?v=3"
+                                            alt="">
+                                    </div>
+                                </div>
+                                <div class="template-info">
+                                    <h3 class="template-name">Dualeo-x</h3>
+                                    <p class="template-category">Phù hợp cho siêu thị</p>
+                                    <div class="template-price">1,500,000 đ</div>
+                                    <div class="template-actions">
+                                        <button class=" btn-preview">Xem thử</button>
+                                        <button class="btn-details">Chi tiết</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center  more-button view-more-theme mt-4">
+                        <a href="javascript:;" title="Xem thêm giao diện" class="more-collection">
+                            Xem thêm giao diện
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="bg-register">
+                <h2>Sapo - Tất cả những gì bạn cần để <br class="d-block d-md-none">quản lý và kinh doanh</h2>
+                <label for="site_name_bottom">Chúc mừng bạn có 7 ngày dùng thử miễn phí. Nhanh tay đăng ký ngay
+                    !</label>
+                <div class="reg-form d-flex justify-content-center w-75 mx-auto">
+                    <div class="col-lg-8">
+                        <input id="site_name_bottom" class="input-site-name d-none d-md-inline-block" type="text"
+                            value="" placeholder="Nhập tên cửa hàng/doanh nghiệp của bạn" name="StoreName">
+                    </div>
+                    <div class="col-lg-4">
+                        <a class="btn-registration banner-home-registration event-Sapo-Free-Trial-form-open">
+                            <span class="text">Dùng thử miễn phí</span>
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                                    class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
