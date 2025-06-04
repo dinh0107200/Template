@@ -129,6 +129,7 @@ header {
 }
 
 footer {
+  margin-top: 100px;
   background-color: #051324;
   height: 600px;
   position: relative;
@@ -193,3 +194,8 @@ footer {
 .btn-registration .icon svg {
   color: #fff;
 }/*# sourceMappingURL=style.css.map */
+
+.portfolio-slider .slide img{
+    aspect-ratio: 1;
+    object-fit: cover;
+}
