@@ -22,18 +22,25 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./js/main.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jQuery.Marquee/1.5.0/jquery.marquee.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.counterup/1.0/jquery.counterup.min.js"></script>
 </head>
 
 <body>
     <header>
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 d-flex align-items-center">
+                <div class="col-3 d-flex align-items-center">
                     <a href="/">
                         <img src="./images/Sapo-logo.svg" alt="" class="logo">
                     </a>
                 </div>
-                <div class="col-lg-9">
+                <div class="col-9">
+                    <div class="d-lg-none d-block">
+                        <div class="mobile-btn" onclick="show()">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    </div>
                     <ul class="ul-reset ul-menu">
                         <li>
                             <a href="">Web bán hàng</a>
@@ -65,6 +72,51 @@
 
         </div>
     </header>
+
+    <div class="header-mobile">
+        <div class="container">
+            <div class="row border-bottom pb-2">
+                <div class="col-5">
+                    <a href="/">
+                        <img src="./images/Sapo-logo.svg" alt="" class="logo">
+                    </a>
+                </div>
+                <div class="col-7 text-right text-white">
+                    <div class="close-header" onclick="Close()"><i class="fa-solid fa-xmark"></i></div>
+                </div>
+            </div>
+            <ul class="ul-reset ul-mobile">
+                <li>
+                    <a href="">Web bán hàng</a>
+                </li>
+                <li>
+                    <a href="">Web doanh nghiệp</a>
+                </li>
+                <li>
+                    <a href="">Bảng giá</a>
+                </li>
+                <li>
+                    <a href="">Giao diện</a>
+                </li>
+                <li>
+                    <a href="">Ứng dụng</a>
+                </li>
+                <li>
+                    <a href="">Khách hàng</a>
+                </li>
+                <div class="d-flex btn-mb" style="gap: 10px; margin-top: 20px;    justify-content: space-around;">
+                    <li>
+                        <a class="account-btn" href="">Đăng ký</a>
+                    </li>
+                    <li>
+                        <a class="account-btn" href="">Đăng nhập</a>
+                    </li>
+                </div>
+            </ul>
+        </div>
+    </div>
+    <div class="overflow" onclick="Close()">
+    </div>
     <section class="banner py-4">
         <div class="container">
             <div class="row">
@@ -86,7 +138,7 @@
                     </a>
                 </div>
                 <div class="col-lg-6">
-                    <img src="./images/thiet-ke-website-chuyen-nghiep.png" alt="" class="banner-image">
+                    <img src="./images/thiet-ke-website-chuyen-nghiep.png" alt="" class="banner-image mt-lg-0 mt-3">
                 </div>
             </div>
         </div>
@@ -262,7 +314,7 @@
                                                 cả thiết bị: PC, Laptop, Table & Mobile.
                                             </p>
                                         </div>
-                                        <a class="btn-registration CTA-home mt-5">
+                                        <a class="btn-registration CTA-home mt-3">
                                             <span class="text">Dùng thử miễn phí</span>
                                             <span class="icon">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
@@ -352,23 +404,14 @@
             <div class="main-container">
                 <!-- Category Navigation -->
                 <div class="category-tabs">
-                    <a href="#" class="tab-item" data-category="new">Giao diện mới</a>
+                    <a href="#" class="tab-item active" data-category="new">Giao diện mới</a>
                     <a href="#" class="tab-item" data-category="free">Giao diện miễn phí</a>
-                    <a href="#" class="tab-item active" data-category="under1m">Dưới 1 triệu</a>
+                    <a href="#" class="tab-item " data-category="under1m">Dưới 1 triệu</a>
                     <a href="#" class="tab-item" data-category="popular">Được mua nhiều</a>
                 </div>
 
                 <!-- Templates Section -->
                 <div class="templates-section">
-                    <!-- Navigation Buttons -->
-                    <button class="nav-btn prev">
-                        <i class="fas fa-chevron-left"></i>
-                    </button>
-                    <button class="nav-btn next">
-                        <i class="fas fa-chevron-right"></i>
-                    </button>
-
-                    <!-- Template Cards Grid -->
                     <div class="template-grid">
                         <!-- Dualeo-x Template -->
                         <div class="template-card card-1">
@@ -442,7 +485,7 @@
     <section class="speed-website">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-12">
+                <div class="col-lg-6 col-md-8 col-12">
                     <h2 class="block-title">Tăng tốc cho website với kho ứng dụng mạnh mẽ của Sapo</h2>
                     <div class="list-solution d-flex flex-column">
                         <div class="item text-white">
@@ -459,8 +502,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-12">
-                    <img class="w-100"
+                <div class="col-lg-6 col-md-4 col-12">
+                    <img class="speed-img"
                         src="https://www.sapo.vn/Themes/Portal/Default/StylesV2/images/landingsite/ld-websitedesign/professionalwebsite/kho-ung-dung-sapo.png?v=2"
                         alt="">
                 </div>
@@ -539,7 +582,7 @@
                     <div class="right-title">
                         <h2>Thiết kế website chuyên nghiệp theo ngành nghề</h2>
                         <p>Những mẫu website đẹp, phù hợp với ngành nghề, lĩnh vực bạn quan tâm</p>
-                        <a class="btn-registration CTA-home mt-5">
+                        <a class="btn-registration CTA-home mt-lg-5 mt-3">
                             <span class="text">Dùng thử miễn phí</span>
                             <span class="icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
@@ -713,11 +756,11 @@
                 <label for="site_name_bottom">Chúc mừng bạn có 7 ngày dùng thử miễn phí. Nhanh tay đăng ký ngay
                     !</label>
                 <div class="reg-form d-flex justify-content-center w-75 mx-auto">
-                    <div class="col-lg-8">
+                    <div class="col-lg-8 col-md-7">
                         <input id="site_name_bottom" class="input-site-name d-none d-md-inline-block" type="text"
                             value="" placeholder="Nhập tên cửa hàng/doanh nghiệp của bạn" name="StoreName">
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-5">
                         <a class="btn-registration banner-home-registration event-Sapo-Free-Trial-form-open">
                             <span class="text">Dùng thử miễn phí</span>
                             <span class="icon">
@@ -732,8 +775,115 @@
 
                 </div>
             </div>
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Sapo.vn</h3>
+                    <ul>
+                        <li><a href="#">Về chúng tôi</a></li>
+                        <li><a href="#">Sapo là gì?</a></li>
+                        <li><a href="#">Blog Sapo</a></li>
+                        <li><a href="#">Bảng giá</a></li>
+                        <li><a href="#">Tuyển dụng</a></li>
+                        <li><a href="#">Profile Sản Phẩm</a></li>
+                        <li><a href="#">Sapo Academy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Sản phẩm</h3>
+                    <ul>
+                        <li><a href="#">Phần mềm quản lý bán hàng</a></li>
+                        <li><a href="#">Phần mềm bán hàng online</a></li>
+                        <li><a href="#">Thiết kế website</a></li>
+                        <li><a href="#">Phần mềm quản lý nhà hàng</a></li>
+                        <li><a href="#">Phần mềm bán hàng hợp kênh</a></li>
+                        <li><a href="#">Quản lý & phát triển thương hiệu</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Thiết kế website</h3>
+                    <ul>
+                        <li><a href="#">Thiết kế website bán hàng</a></li>
+                        <li><a href="#">Thiết kế web thời trang</a></li>
+                        <li><a href="#">Thiết kế web doanh nghiệp</a></li>
+                        <li><a href="#">Thiết kế website bất động sản</a></li>
+                        <li><a href="#">Thiết kế web thương mại điện tử</a></li>
+                        <li><a href="#">Thiết kế website giá rẻ</a></li>
+                        <li><a href="#">Mẫu website đẹp</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Trợ giúp</h3>
+                    <ul>
+                        <li><a href="#">Thiết kế website bán hàng</a></li>
+                        <li><a href="#">Thiết kế web thời trang</a></li>
+                        <li><a href="#">Thiết kế web doanh nghiệp</a></li>
+                        <li><a href="#">Thiết kế website bất động sản</a></li>
+                        <li><a href="#">Thiết kế web thương mại điện tử</a></li>
+                        <li><a href="#">Thiết kế website giá rẻ</a></li>
+                        <li><a href="#">Mẫu website đẹp</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Hợp tác</h3>
+                    <ul>
+                        <li><a href="#">Thiết kế website bán hàng</a></li>
+                        <li><a href="#">Thiết kế web thời trang</a></li>
+                        <li><a href="#">Thiết kế web doanh nghiệp</a></li>
+                        <li><a href="#">Thiết kế website bất động sản</a></li>
+                        <li><a href="#">Thiết kế web thương mại điện tử</a></li>
+                        <li><a href="#">Thiết kế website giá rẻ</a></li>
+                        <li><a href="#">Mẫu website đẹp</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="support-section">
+                    <h4>Trợ giúp</h4>
+                    <p>Trung tâm trợ giúp</p>
+                    <p>Hình thức thanh toán</p>
+                    <p>Hướng dẫn đăng nhập Sapo</p>
+                    <p>Điều khoản & Điều kiện sử dụng</p>
+                    <p>Chính sách bảo vệ dữ liệu cá nhân</p>
+                    <p>Dịch vụ hoàn thiện website</p>
+                    <p>Liên hệ</p>
+                </div>
+                <div class="support-section">
+                    <h4>Trợ giúp</h4>
+                    <p>Trung tâm trợ giúp</p>
+                    <p>Hình thức thanh toán</p>
+                    <p>Hướng dẫn đăng nhập Sapo</p>
+                    <p>Điều khoản & Điều kiện sử dụng</p>
+                    <p>Chính sách bảo vệ dữ liệu cá nhân</p>
+                    <p>Dịch vụ hoàn thiện website</p>
+                    <p>Liên hệ</p>
+                </div>
+                <div class="support-section">
+                    <h4>Trợ giúp</h4>
+                    <p>Trung tâm trợ giúp</p>
+                    <p>Hình thức thanh toán</p>
+                    <p>Hướng dẫn đăng nhập Sapo</p>
+                    <p>Điều khoản & Điều kiện sử dụng</p>
+                    <p>Chính sách bảo vệ dữ liệu cá nhân</p>
+                    <p>Dịch vụ hoàn thiện website</p>
+                    <p>Liên hệ</p>
+                </div>
+                <div class="support-section">
+                    <h4>Trợ giúp</h4>
+                    <p>Trung tâm trợ giúp</p>
+                    <p>Hình thức thanh toán</p>
+                    <p>Hướng dẫn đăng nhập Sapo</p>
+                    <p>Điều khoản & Điều kiện sử dụng</p>
+                    <p>Chính sách bảo vệ dữ liệu cá nhân</p>
+                    <p>Dịch vụ hoàn thiện website</p>
+                    <p>Liên hệ</p>
+                </div>
+            </div>
         </div>
     </footer>
+
 </body>
 <script>
 
@@ -763,17 +913,17 @@
             {
                 breakpoint: 1024,
                 settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 2,
                     slidesToScroll: 3,
                     infinite: true,
-                    dots: true
+                    dots: false
                 }
             },
             {
                 breakpoint: 600,
                 settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
+                    slidesToShow: 1,
+                    slidesToScroll: 1
                 }
             },
             {
@@ -788,12 +938,61 @@
             // instead of a settings object
         ]
     });
+
+    $('.template-grid').slick({
+        dots: false,
+        infinite: false,
+        arrows: false,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+
+        ]
+    });
+
     $('.marquee').marquee({
         direction: 'left',
         duration: 9000,
         duplicated: true,
         startVisible: true
     });
+    $('.count').counterUp({
+        delay: 10,
+        time: 2000
+    });
+
+    function show() {
+        $(".header-mobile").addClass('active')
+        $(".overflow").addClass('active')
+    }
+    function Close() {
+        $(".header-mobile").removeClass('active')
+        $(".overflow").removeClass('active')
+    }
 </script>
 
 </html>
