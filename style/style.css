@@ -850,6 +850,11 @@ ul {
   color: #FFA500;
 }
 
+#pricingTabsContent {
+  padding-bottom: 120px;
+  overflow: hidden;
+}
+
 .body-content {
   max-height: 650px;
   overflow: hidden;
@@ -2152,6 +2157,25 @@ ul {
   transform: translateY(-2px);
 }
 
+.speed-img {
+  width: 100%;
+}
+
+@font-face {
+  font-family: "Roboto-Bold";
+  font-display: swap;
+  src: url("../webfonts/Roboto-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Medium";
+  font-display: swap;
+  src: url("../webfonts/Roboto-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Regular";
+  font-display: swap;
+  src: url("../webfonts/Roboto-Regular.ttf") format("truetype");
+}
 @media (max-width: 1024px) {
   .ul-menu li {
     font-size: 12px;
@@ -2360,10 +2384,6 @@ ul {
     font-size: 13px;
   }
 }
-.speed-img {
-  width: 100%;
-}
-
 @media (max-width: 600px) {
   .banner-title {
     line-height: 34px;
