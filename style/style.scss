@@ -1004,12 +1004,44 @@ ul {
     border-radius: 25px;
     @include Roboto-Medium();
     transition: all 0.3s ease;
+
+    a {
+        color: $backgound-CTA;
+    }
+}
+
+.body-content {
+    max-height: 650px;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    &.active {
+        max-height: 100%;
+    }
+}
+
+.detail-more {
+    text-align: center;
+    color: #096f47;
+    font-size: 16px;
+    position: relative;
+    cursor: pointer;
+    padding: 20px;
+    background: #fff;
 }
 
 .btn-details:hover {
     background: #27ae60;
     border: 2px solid #27ae60;
     color: white;
+
+    a {
+        color: $white;
+    }
 }
 
 /* View More Section */

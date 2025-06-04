@@ -27,33 +27,35 @@
 </head>
 
 <body>
-    <header>
+   <header>
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 d-flex align-items-center">
+                <div class="col-3 d-flex align-items-center">
                     <a href="/">
                         <img src="./images/Sapo-logo.svg" alt="" class="logo">
                     </a>
                 </div>
-                <div class="col-lg-9">
+                <div class="col-9">
+                    <div class="d-lg-none d-block">
+                        <div class="mobile-btn" onclick="show()">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    </div>
                     <ul class="ul-reset ul-menu">
                         <li>
-                            <a href="">Web bán hàng</a>
+                            <a href="./store-selling.html">Web bán hàng</a>
                         </li>
                         <li>
-                            <a href="">Web doanh nghiệp</a>
+                            <a href="/">Web doanh nghiệp</a>
                         </li>
                         <li>
-                            <a href="">Bảng giá</a>
+                            <a href="./option-price.html">Bảng giá</a>
                         </li>
                         <li>
-                            <a href="">Giao diện</a>
+                            <a href="./template.html">Giao diện</a>
                         </li>
                         <li>
-                            <a href="">Ứng dụng</a>
-                        </li>
-                        <li>
-                            <a href="">Khách hàng</a>
+                            <a href="./customer.html">Khách hàng</a>
                         </li>
                         <li>
                             <a class="account-btn" href="">Đăng ký</a>
@@ -67,6 +69,47 @@
 
         </div>
     </header>
+    <div class="header-mobile">
+        <div class="container">
+            <div class="row border-bottom pb-2">
+                <div class="col-5">
+                    <a href="/">
+                        <img src="./images/Sapo-logo.svg" alt="" class="logo">
+                    </a>
+                </div>
+                <div class="col-7 text-right text-white">
+                    <div class="close-header" onclick="Close()"><i class="fa-solid fa-xmark"></i></div>
+                </div>
+            </div>
+            <ul class="ul-reset ul-mobile">
+                <li>
+                    <a href="./store-selling.html">Web bán hàng</a>
+                </li>
+                <li>
+                    <a href="/">Web doanh nghiệp</a>
+                </li>
+                <li>
+                    <a href="./option-price.html">Bảng giá</a>
+                </li>
+                <li>
+                    <a href="./template.html">Giao diện</a>
+                </li>
+                <li>
+                    <a href="./customer.html">Khách hàng</a>
+                </li>
+                <div class="d-flex btn-mb" style="gap: 10px; margin-top: 20px; justify-content: space-around;">
+                    <li>
+                        <a class="account-btn" href="">Đăng ký</a>
+                    </li>
+                    <li>
+                        <a class="account-btn" href="">Đăng nhập</a>
+                    </li>
+                </div>
+            </ul>
+        </div>
+    </div>
+    <div class="overflow" onclick="Close()">
+    </div>
     <section class="refer-website">
         <div class="container ">
             <div class="row">

@@ -188,7 +188,6 @@ header {
 }
 
 footer {
-  margin-top: 100px;
   background-color: #051324;
   position: relative;
   padding-top: 230px;
@@ -256,14 +255,6 @@ ul {
 }
 .btn-registration .icon svg {
   color: #fff;
-<<<<<<< HEAD
-}/*# sourceMappingURL=style.css.map */
-
-.portfolio-slider .slide img{
-    aspect-ratio: 1;
-    object-fit: cover;
-}
-=======
 }
 
 .banner {
@@ -855,11 +846,39 @@ ul {
   font-family: "Roboto-Medium";
   transition: all 0.3s ease;
 }
+.btn-details a {
+  color: #FFA500;
+}
+
+.body-content {
+  max-height: 650px;
+  overflow: hidden;
+}
+.body-content img {
+  width: 100%;
+  height: auto;
+}
+.body-content.active {
+  max-height: 100%;
+}
+
+.detail-more {
+  text-align: center;
+  color: #096f47;
+  font-size: 16px;
+  position: relative;
+  cursor: pointer;
+  padding: 20px;
+  background: #fff;
+}
 
 .btn-details:hover {
   background: #27ae60;
   border: 2px solid #27ae60;
   color: white;
+}
+.btn-details:hover a {
+  color: #fff;
 }
 
 /* View More Section */
@@ -2483,4 +2502,3 @@ ul {
 .overflow.active {
   left: 0;
 }/*# sourceMappingURL=style.css.map */
->>>>>>> origin/home
