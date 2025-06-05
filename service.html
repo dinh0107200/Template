@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chu</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css"
+        integrity="sha512-rt/SrQ4UNIaGfDyEXZtNcyWvQeOq0QLygHluFQcSjaGB04IxWhal71tKuzP6K8eYXYB6vJV4pHkXcmFGGQ1/0w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/js/bootstrap.min.js"
+        integrity="sha512-7rusk8kGPFynZWu26OKbTeI+QPoYchtxsmPeBqkHIEXJxeun4yJ4ISYe7C6sz9wdxeE1Gk3VxsIWgCZTc+vX3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jQuery.Marquee/1.5.0/jquery.marquee.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.counterup/1.0/jquery.counterup.min.js"></script>
+    <!-- Font Awesome 6 (free version) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-xwWWt8wR2k0+Jg5gM2RMV8+c3f5k5drP6VmHxUwTJ9CkUl9o+LRYE5t3Z1TgNXdCqVaLx4jqcNYwZVnK03+x8Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style/service.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-3 d-flex align-items-center">
+                    <a href="/">
+                        <img src="./images/Sapo-logo.svg" alt="" class="logo">
+                    </a>
+                </div>
+                <div class="col-9">
+                    <div class="d-lg-none d-block">
+                        <div class="mobile-btn" onclick="show()">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    </div>
+                    <ul class="ul-reset ul-menu">
+                        <li>
+                            <a href="./store-selling.html">Web bán hàng</a>
+                        </li>
+                        <li>
+                            <a href="/">Web doanh nghiệp</a>
+                        </li>
+                        <li>
+                            <a href="./service.html">Bảng giá</a>
+                        </li>
+                        <li>
+                            <a href="./template.html">Giao diện</a>
+                        </li>
+                        <li>
+                            <a href="./customer.html">Khách hàng</a>
+                        </li>
+                        <li>
+                            <a class="account-btn" href="">Đăng ký</a>
+                        </li>
+                        <li>
+                            <a class="account-btn" href="">Đăng nhập</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <div class="header-mobile">
+        <div class="container">
+            <div class="row border-bottom pb-2">
+                <div class="col-5">
+                    <a href="/">
+                        <img src="./images/Sapo-logo.svg" alt="" class="logo">
+                    </a>
+                </div>
+                <div class="col-7 text-right text-white">
+                    <div class="close-header" onclick="Close()"><i class="fa-solid fa-xmark"></i></div>
+                </div>
+            </div>
+            <ul class="ul-reset ul-mobile">
+                <li>
+                    <a href="./store-selling.html">Web bán hàng</a>
+                </li>
+                <li>
+                    <a href="/">Web doanh nghiệp</a>
+                </li>
+                <li>
+                    <a href="./service.html">Bảng giá</a>
+                </li>
+                <li>
+                    <a href="./template.html">Giao diện</a>
+                </li>
+                <li>
+                    <a href="./customer.html">Khách hàng</a>
+                </li>
+                <div class="d-flex btn-mb" style="gap: 10px; margin-top: 20px; justify-content: space-around;">
+                    <li>
+                        <a class="account-btn" href="">Đăng ký</a>
+                    </li>
+                    <li>
+                        <a class="account-btn" href="">Đăng nhập</a>
+                    </li>
+                </div>
+            </ul>
+        </div>
+    </div>
+    <div class="overflow" onclick="Close()">
+    </div>
+
+    <main>
+        <section class="title-page">
+            <div class="container">
+                <div class="block-title py-4">
+                    <h2 class="title">Bảng giá dịch vụ phần mềm Sapo</h2>
+                    <p class="sub">Lựa chọn giải pháp phù hợp với nhu cầu của bạn và dùng thử miễn phí 7 ngày</p>
+                </div>
+            </div>
+            <div class="nav-bar bar-main">
+
+                <ul class="row nav nav-tabs justify-content-center" id="pricingTabs" role="tablist">
+                    <li class="col-md-3 nav-item" role="presentation">
+                        <button class="nav-link active" id="website-tab" data-bs-toggle="tab" data-bs-target="#website"
+                            type="button" role="tab">
+                            <i class="fa-solid fa-globe"></i>
+                            <span class="icon-text"> Thiết kế Website</span>
+                        </button>
+                    </li>
+                    <li class="col-md-3 nav-item" role="presentation">
+                        <button class="nav-link nav-tab" id="admin-website-tab" data-bs-toggle="tab"
+                            data-bs-target="#admin-website" type="button" role="tab">
+                            <i class="fa-solid fa-user-gear"></i>
+                            <span class="icon-text"> Quản trị Website</span>
+                        </button>
+                    </li>
+                    <li class="col-md-3 nav-item" role="presentation">
+                        <button class="nav-link nav-tab" id="logo-tab" data-bs-toggle="tab" data-bs-target="#logo" type="button"
+                            role="tab">
+                            <i class="fa-solid fa-palette"></i>
+                            <span class="icon-text"> Thiết kế Logo</span>
+                        </button>
+                    </li>
+                    <li class="col-md-3 nav-item" role="presentation" style="border: none;">
+                        <button class="nav-link nav-tab" id="admin-page-tab" data-bs-toggle="tab" data-bs-target="#admin-page"
+                            type="button" role="tab">
+                            <i class="fa-solid fa-bullhorn"></i>
+                            <span class="icon-text"> Quản trị Fanpage</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav-bar bar-mobile">
+                <ul class="row nav nav-tabs " id="pricingTabs" role="tablist">
+                    <li class="col-3 nav-item" role="presentation">
+                        <button class="nav-link active" id="website-tab" data-bs-toggle="tab" data-bs-target="#website"
+                            type="button" role="tab">
+                            <i class="fa-solid fa-globe"></i>
+                        </button>
+                    </li>
+                    <li class="col-3 nav-item" role="presentation">
+                        <button class="nav-link nav-tab" id="admin-website-tab" data-bs-toggle="tab"
+                            data-bs-target="#admin-website" type="button" role="tab">
+                            <i class="fa-solid fa-user-gear"></i>
+                        </button>
+                    </li>
+                    <li class="col-3 nav-item" role="presentation">
+                        <button class="nav-link nav-tab" id="logo-tab" data-bs-toggle="tab" data-bs-target="#logo" type="button"
+                            role="tab">
+                            <i class="fa-solid fa-palette"></i>
+                        </button>
+                    </li>
+                    <li class="col-3 nav-item" role="presentation" style="border: none;">
+                        <button class="nav-link nav-tab" id="admin-page-tab" data-bs-toggle="tab" data-bs-target="#admin-page"
+                            type="button" role="tab">
+                            <i class="fa-solid fa-bullhorn"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+        <section class="sec-content">
+            <div class="tab-content pt-4 tab-cate" id="pricingTabsContent">
+                <div class="tab-pane fade show active" id="website" role="tabpanel">
+                    <div class="container">
+                        <div class="block-title py-4">
+                            <h2 class="title-service">Giá phần mềm quản lý bán hàng</h2>
+                            <p class="sub-service">Sapo cung cấp đa dạng các gói dịch vụ phù hợp với các mô hình kinh doanh từ cửa hàng cho
+                                đến
+                                các kênh
+                                online (Facebook, Sàn TMĐT,...)</p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-md-4 col-half">
+                            <div class="main-content">
+                                <div class="card mb-4 card-wrapper">
+                                    <div class="title-option">
+                                        <h2 class="name-option">START UP</h2>
+                                        <div class="text-center" style="text-decoration: line-through;">
+                                            <p class="root-price"><span class="fw-medium"
+                                                    style="font-size: 22px">249.000<sup>đ</sup></span> <span
+                                                    class="fw-light">/tháng</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="sale-option text-center">
+                                        <p class="sale-condition">Khi mua từ 2 năm</p>
+                                        <span class="sale-price">170.000<sup>đ</sup></span><span
+                                            style="font-size: 18px;font-weight: 300;">/tháng</span>
+                                    </div>
+                                    <button class="try-use">Dùng thử</button>
+
+                                    <hr>
+                                    <div class="feature">
+                                        <div class="font-weight-bold pb-3">Quán có quy mô nhỏ, nghiệp vụ bán hàng cơ bản
+                                        </div>
+                                        <div class="item">
+                                            <i class="fa-regular fa-circle-check"></i>
+                                            <span class="icon-text">1 chi nhánh</span>
+                                        </div>
+                                        <div class="item">
+                                            <i class="fa-regular fa-circle-check"></i>
+                                            <span class="icon-text">5 thiết bị bán hàng</span>
+                                        </div>
+                                        <div class="item">
+                                            <i class="fa-regular fa-circle-check"></i>
+                                            <span class="icon-text">Order nhanh chóng trên nhiều thiết bị</span>
+                                        </div>
+                                        <div class="item">
+                                            <i class="fa-regular fa-circle-check"></i>
+                                            <span class="icon-text">Tính tiền chính xác, in hóa đơn chuyên nghiệp</span>
+                                        </div>
+                                        <div class="item">
+                                            <i class="fa-regular fa-circle-check"></i>
+                                            <span class="icon-text">Tuản lý số lượng nguyên vật liệu trong kho</span>
+                                        </div>
+                                        <div class="item">
+                                            <i class="fa-regular fa-circle-check"></i>
+                                            <span class="icon-text">Báo cáo bán hàng chi tiết & trực quan</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-half">
+                            <div class="main-content">
+                                <div class="card mb-4 card-wrapper">
+                                    <div class="title-option">
+                                        <h2 class="name-option">PRO</h2>
+                                        <div class="text-center" style="text-decoration: line-through;">
+                                            <p class="root-price"><span class="fw-medium"
+                                                    style="font-size: 22px">399.000<sup>đ</sup></span> <span
+                                                    class="fw-light">/tháng</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="sale-option text-center">
+                                        <p class="sale-condition">Khi mua từ 2 năm</p>
+                                        <span class="sale-price">249.000<sup>đ</sup></span><span
+                                            style="font-size: 18px;font-weight: 300;">/tháng</span>
+                                    </div>
+                                    <button class="try-use">Dùng thử</button>
+
+                                    <hr>
+                                    <div class="feature">
+                                        <div class="font-weight-bold pb-3">Quán có quy mô vừa hoặc lớn, hoạt động theo
+                                            mô hình doanh nghiệp</div>
+
+                                        <div class="item">
+                                            <i class="fa-regular fa-circle-check"></i>
+                                            <span class="icon-text"> 1 chi nhánh (dễ dàng mở chuỗi)</span>
+                                        </div>
+                                        <div class="item">
+                                            <i class="fa-regular fa-circle-check"></i>
+                                            <span class="icon-text"> Không giới hạn thiết bị bán hàng</span>
+                                        </div>
+                                        <div class="item">
+                                            <i class="fa-regular fa-circle-check"></i>
+                                            <span class="icon-text"> Khách tự order tại bàn với QR Order</span>
+                                        </div>
+                                        <div class="item">
+                                            <i class="fa-regular fa-circle-check"></i>
+                                            <span class="icon-text"> Quản lý giá cost nguyên vật liệu</span>
+                                        </div>
+                                        <div class="item">
+                                            <i class="fa-regular fa-circle-check"></i>
+                                            <span class="icon-text">Chấm công & quản lý thời gian làm việc của nhân
+                                                viên</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <section class="comparison">
+                        <div id="accordion" role="tablist">
+                            <div class="card">
+                                <div class="card-header" role="tab" id="headingOne">
+                                    <h5 class="mb-0" style="display: flex; justify-content: center;">
+                                        <a data-toggle="collapse" href="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne" id="toggleButton"
+                                            class="service-button compare-button">
+                                            <!-- So sánh các gói dịch vụ <span class="icon" id="toggleIcon">▴</span> -->
+                                            <span class="button-text">So sánh các gói dịch vụ</span>
+                                            <i class="fas fa-chevron-down"></i>
+                                        </a>
+                                    </h5>
+                                </div>
+
+                                <div id="collapseOne" class="collapse compare-main" role="tabpanel" aria-labelledby="headingOne">
+                                    <div class="card-body">
+
+                                        <div class="row" style="padding: 0 20px;">
+                                            <div class="col-md-8" style="    padding-left: 10px;">
+                                                <div class="try-text">
+                                                    Trải nghiệm ngay
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="13"
+                                                        viewBox="0 0 35 13" fill="none">
+                                                        <g clip-path="url(#clip0_13736_5624)">
+                                                            <path
+                                                                d="M30.1208 7.09113C27.9157 5.9094 25.6814 5.15985 23.3241 4.81851C15.9302 3.74454 11.4874 4.64121 5.48108 9.06529C4.98174 9.43334 4.49842 9.82794 4.02223 10.2276C3.81732 10.4 3.62954 10.4096 3.43628 10.2472C3.18301 10.0338 3.36871 9.84892 3.48651 9.66163C4.21875 8.49514 5.19605 7.57024 6.30049 6.8217C12.2006 2.82157 16.4483 2.08448 23.5288 3.0832C25.5798 3.37192 27.5155 4.0963 29.4045 4.96224C29.6368 5.0687 29.8748 5.15894 30.2554 5.31661C29.5163 4.2169 28.6444 3.43481 28.1193 2.38601C28.0186 2.18533 27.8878 2.0006 27.7934 1.79729C27.7185 1.63478 27.5026 1.37638 27.6855 1.30392C27.8575 1.23556 28.1027 1.02764 28.389 1.35543C29.6804 2.83506 31.0332 4.2583 32.3459 5.71807C32.9548 6.39605 33.7313 6.93887 34.0124 7.89418C34.1331 8.30621 34.2456 8.52121 33.6245 8.64992C31.9569 8.99536 30.2623 8.93519 28.5904 9.13679C27.9543 9.2135 27.3206 9.13102 26.6985 9.20623C26.0893 9.28002 26.0598 8.8698 25.9868 8.48184C25.9003 8.02125 26.1754 7.82959 26.5689 7.74114C27.4518 7.54116 28.3353 7.35476 29.2393 7.27926C29.4982 7.25804 29.7667 7.29135 30.1197 7.09027L30.1208 7.09113Z"
+                                                                fill="black"></path>
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_13736_5624">
+                                                                <rect width="33.1005" height="8.09125" fill="white"
+                                                                    transform="translate(0.368652 4.17371) rotate(-6.18304)">
+                                                                </rect>
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                    <button class="try-use">Dùng thử</button>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2" style="text-align: center;">
+                                                <div class="option-comparison">
+                                                    <h2 class="name-option">Start Up</h2>
+                                                    <p class="root-price"><span
+                                                            style="color: #007aff; font-weight: 600;">249.000<sup>đ</sup></span>/tháng
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2" style="text-align: center;">
+                                                <div class="option-comparison">
+                                                    <h2 class="name-option">Pro</h2>
+                                                    <p class="root-price"><span
+                                                            style="color: #007aff; font-weight: 600;">399.000<sup>đ</sup></span>/tháng
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="accordion" role="tablist">
+                                            <div class="card">
+                                                <div class="card-header" role="tab" id="headingTwo">
+                                                    <h5 class="mb-0">
+                                                        <a data-toggle="collapse" href="#collapseTwo"
+                                                            aria-expanded="true" aria-controls="collapseTwo"
+                                                            id="toggleButton "
+                                                            class="service-button compare-button-child"
+                                                            style="width: 100%;">
+
+                                                            <span class="button-text text-left">So sánh các gói dịch
+                                                                vụ</span>
+                                                            <i class="fas fa-chevron-down"></i>
+                                                        </a>
+
+                                                    </h5>
+                                                </div>
+
+                                                <div id="collapseTwo" class="collapse show" role="tabpanel"
+                                                    aria-labelledby="headingTwo">
+                                                    <div class="card-body">
+                                                        <div class="row py-2">
+                                                            <div class="col-md-8 can-doc fz14 fa4-fw font-weight-bold"
+                                                                style="padding-left: 30px;">
+                                                                Mô hình bán hàng
+                                                            </div>
+                                                            <div class="col-md-2 can-doc fz14"
+                                                                style="justify-content: center;">
+                                                                <i class="fa-solid fa-minus"></i>
+                                                            </div>
+                                                            <div class="col-md-2 can-doc fz14"
+                                                                style="justify-content: center;">
+                                                                <i class="fa-solid fa-circle-check"></i>
+                                                            </div>
+                                                        </div>
+                                                        <hr><br>
+                                                        <div class="row py-2">
+                                                            <div class="col-md-8 can-doc fz14 fa4-fw font-weight-bold"
+                                                                style="padding-left: 30px;">
+                                                                Phục vụ tại chỗ
+                                                            </div>
+                                                            <div class="col-md-2 can-doc fz14"
+                                                                style="justify-content: center;">
+                                                                <i class="fa-solid fa-circle-check"></i>
+                                                            </div>
+                                                            <div class="col-md-2 can-doc fz14"
+                                                                style="justify-content: center;">
+                                                                <i class="fa-solid fa-circle-check"></i>
+                                                            </div>
+                                                        </div>
+                                                        <hr><br>
+                                                        <div class="row py-2">
+                                                            <div class="col-md-8 can-doc fz14 fa4-fw font-weight-bold"
+                                                                style="padding-left: 30px;">
+                                                                Bán hàng mang đi (take away)
+                                                            </div>
+                                                            <div class="col-md-2 can-doc fz14"
+                                                                style="justify-content: center;">
+                                                                <i class="fa-solid fa-circle-check"></i>
+                                                            </div>
+                                                            <div class="col-md-2 can-doc fz14"
+                                                                style="justify-content: center;">
+                                                                <i class="fa-solid fa-circle-check"></i>
+                                                            </div>
+                                                        </div>
+                                                        <hr><br>
+                                                        <div class="row py-2">
+                                                            <div class="col-md-8 can-doc fz14 fa4-fw font-weight-bold"
+                                                                style="padding-left: 30px;">
+                                                                Web đặt hàng online
+                                                            </div>
+                                                            <div class="col-md-2 can-doc fz14"
+                                                                style="justify-content: center;">
+                                                                <i class="fa-solid fa-circle-check"></i>
+                                                            </div>
+                                                            <div class="col-md-2 can-doc fz14"
+                                                                style="justify-content: center;">
+                                                                <i class="fa-solid fa-circle-check"></i>
+                                                            </div>
+                                                        </div>
+                                                        <hr><br>
+                                                        <div class="row py-2">
+                                                            <div class="col-md-8 can-doc fz14 fa4-fw font-weight-bold"
+                                                                style="padding-left: 30px;">
+                                                                Bán hàng trên app (GrabFood, ShopeeFood)
+                                                            </div>
+                                                            <div class="col-md-2 can-doc fz14"
+                                                                style="justify-content: center;">
+                                                                <i class="fa-solid fa-circle-check"></i>
+                                                            </div>
+                                                            <div class="col-md-2 can-doc fz14"
+                                                                style="justify-content: center;">
+                                                                <i class="fa-solid fa-circle-check"></i>
+                                                            </div>
+                                                        </div>
+                                                        <hr><br>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="collapseOne" class="collapse compare-mobile" role="tabpanel" aria-labelledby="headingOne">
+                                    <div class="card-body">
+                                        <div class="row" style="padding: 0 20px;">
+                                            <div class="col-6" style="text-align: center;">
+                                                <div class="option-comparison">
+                                                    <h2 class="name-option">Start Up</h2>
+                                                    <p class="root-price"><span
+                                                            style="color: #007aff; font-weight: 600;">249.000<sup>đ</sup></span>/tháng
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-6" style="text-align: center;">
+                                                <div class="option-comparison">
+                                                    <h2 class="name-option">Pro</h2>
+                                                    <p class="root-price"><span
+                                                            style="color: #007aff; font-weight: 600;">399.000<sup>đ</sup></span>/tháng
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="accordion" role="tablist">
+                                            <div class="card">
+                                                <div class="card-header" role="tab" id="headingTwo">
+                                                    <h5 class="mb-0">
+                                                        <a data-toggle="collapse" href="#collapseTwo"
+                                                            aria-expanded="true" aria-controls="collapseTwo"
+                                                            id="toggleButton "
+                                                            class="service-button compare-button-child"
+                                                            style="width: 100%;">
+
+                                                            <span class="button-text text-left">So sánh các gói dịch
+                                                                vụ</span>
+                                                            <i class="fas fa-chevron-down"></i>
+                                                        </a>
+
+                                                    </h5>
+                                                </div>
+
+                                                <div id="collapseTwo" class="collapse show" role="tabpanel"
+                                                    aria-labelledby="headingTwo">
+                                                    <div class="card-body">
+                                                        <div class="row py-2">
+                                                            <div class="col-md-12 can-doc fz14 fa4-fw font-weight-bold detail-compare">
+                                                                Mô hình bán hàng
+                                                            </div>
+                                                            <div class="col-6 can-doc fz14 py-2"
+                                                                style="justify-content: center;">
+                                                                <i class="fa-solid fa-minus"></i>
+                                                            </div>
+                                                            <div class="col-6 can-doc fz14 py-2"
+                                                                style="justify-content: center;">
+                                                                <i class="fa-solid fa-circle-check"></i>
+                                                            </div>
+                                                        </div>
+                                                        <hr><br>
+                                                        <div class="row">
+                                                            <div class="col-md-8 can-doc fz14 fa4-fw font-weight-bold detail-compare">
+                                                                Phục vụ tại chỗ
+                                                            </div>
+                                                            <div class="col-6 can-doc fz14 py-2"
+                                                                style="justify-content: center;">
+                                                                <i class="fa-solid fa-circle-check"></i>
+                                                            </div>
+                                                            <div class="col-6 can-doc fz14 py-2"
+                                                                style="justify-content: center;">
+                                                                <i class="fa-solid fa-circle-check"></i>
+                                                            </div>
+                                                        </div>
+                                                        <hr><br>
+                                                        <div class="row">
+                                                            <div class="col-md-8 can-doc fz14 fa4-fw font-weight-bold detail-compare">
+                                                                Bán hàng mang đi (take away)
+                                                            </div>
+                                                            <div class="col-6 can-doc fz14 py-2"
+                                                                style="justify-content: center;">
+                                                                <i class="fa-solid fa-circle-check"></i>
+                                                            </div>
+                                                            <div class="col-6 can-doc fz14 py-2"
+                                                                style="justify-content: center;">
+                                                                <i class="fa-solid fa-circle-check"></i>
+                                                            </div>
+                                                        </div>
+                                                        <hr><br>
+                                                        <div class="row">
+                                                            <div class="col-md-8 can-doc fz14 fa4-fw font-weight-bold detail-compare">
+                                                                Web đặt hàng online
+                                                            </div>
+                                                            <div class="col-6 can-doc fz14 py-2"
+                                                                style="justify-content: center;">
+                                                                <i class="fa-solid fa-circle-check"></i>
+                                                            </div>
+                                                            <div class="col-6 can-doc fz14 py-2"
+                                                                style="justify-content: center;">
+                                                                <i class="fa-solid fa-circle-check"></i>
+                                                            </div>
+                                                        </div>
+                                                        <hr><br>
+                                                        <div class="row">
+                                                            <div class="col-md-8 can-doc fz14 fa4-fw font-weight-bold detail-compare">
+                                                                Bán hàng trên app (GrabFood, ShopeeFood)
+                                                            </div>
+                                                            <div class="col-6 can-doc fz14 py-2"
+                                                                style="justify-content: center;">
+                                                                <i class="fa-solid fa-circle-check"></i>
+                                                            </div>
+                                                            <div class="col-6 can-doc fz14 py-2"
+                                                                style="justify-content: center;">
+                                                                <i class="fa-solid fa-circle-check"></i>
+                                                            </div>
+                                                        </div>
+                                                        <hr><br>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+                </div>
+
+                <div class="tab-pane fade tab-cate" id="admin-website" role="tabpanel">
+                    <div class="container">
+                        <div class="block-title py-4">
+                            <h2>Giá phần mềm quản lý nhà hàng, quán cafe, bida, karaoke</h2>
+                            <p>Tùy chỉnh phù hợp với mọi mô hình quán từ nhỏ, vừa, lớn cho đến các chuỗi</p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-md-4 col-half">
+                            <div class="main-content">
+                                <div class="card mb-4 card-wrapper">
+                                    <div class="title-option">
+                                        <h2 class="name-option">START UP</h2>
+                                        <div class="text-center" style="text-decoration: line-through;">
+                                            <p class="root-price"><span class="fw-medium"
+                                                    style="font-size: 22px">249.000<sup>đ</sup></span> <span
+                                                    class="fw-light">/tháng</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="sale-option text-center">
+                                        <p class="sale-condition">Khi mua từ 2 năm</p>
+                                        <span class="sale-price">170.000<sup>đ</sup></span><span
+                                            style="font-size: 18px;font-weight: 300;">/tháng</span>
+                                    </div>
+                                    <button class="try-use">Dùng thử</button>
+
+                                    <hr>
+                                    <div class="feature">
+                                        <div class="font-weight-bold pb-3">Quán có quy mô nhỏ, nghiệp vụ bán hàng cơ bản
+                                        </div>
+                                        <div class="item">
+                                            <i class="fa-regular fa-circle-check"></i>
+                                            <span class="icon-text">1 chi nhánh</span>
+                                        </div>
+                                        <div class="item">
+                                            <i class="fa-regular fa-circle-check"></i>
+                                            <span class="icon-text">5 thiết bị bán hàng</span>
+                                        </div>
+                                        <div class="item">
+                                            <i class="fa-regular fa-circle-check"></i>
+                                            <span class="icon-text">Order nhanh chóng trên nhiều thiết bị</span>
+                                        </div>
+                                        <div class="item">
+                                            <i class="fa-regular fa-circle-check"></i>
+                                            <span class="icon-text">Tính tiền chính xác, in hóa đơn chuyên nghiệp</span>
+                                        </div>
+                                        <div class="item">
+                                            <i class="fa-regular fa-circle-check"></i>
+                                            <span class="icon-text">Tuản lý số lượng nguyên vật liệu trong kho</span>
+                                        </div>
+                                        <div class="item">
+                                            <i class="fa-regular fa-circle-check"></i>
+                                            <span class="icon-text">Báo cáo bán hàng chi tiết & trực quan</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade tab-cate" id="admin-page" role="tabpanel">
+                    <div class="container">
+                        <div class="block-title py-4">
+                            <h2>Chi phí thiết kế website bán hàng chuyên nghiệp</h2>
+                            <p>Sở hữu website bán hàng chuẩn SEO với giao diện đẹp mắt</p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-md-4 col-half">
+                            <div class="main-content">
+                                <div class="card mb-4 card-wrapper">
+                                    <div class="title-option">
+                                        <h2 class="name-option">START UP</h2>
+                                        <div class="text-center" style="text-decoration: line-through;">
+                                            <p class="root-price"><span class="fw-medium"
+                                                    style="font-size: 22px">249.000<sup>đ</sup></span> <span
+                                                    class="fw-light">/tháng</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="sale-option text-center">
+                                        <p class="sale-condition">Khi mua từ 2 năm</p>
+                                        <span class="sale-price">170.000<sup>đ</sup></span><span
+                                            style="font-size: 18px;font-weight: 300;">/tháng</span>
+                                    </div>
+                                    <button class="try-use">Dùng thử</button>
+
+                                    <hr>
+                                    <div class="feature">
+                                        <div class="font-weight-bold pb-3">Quán có quy mô nhỏ, nghiệp vụ bán hàng cơ bản
+                                        </div>
+                                        <div class="item">
+                                            <i class="fa-regular fa-circle-check"></i>
+                                            <span class="icon-text">1 chi nhánh</span>
+                                        </div>
+                                        <div class="item">
+                                            <i class="fa-regular fa-circle-check"></i>
+                                            <span class="icon-text">5 thiết bị bán hàng</span>
+                                        </div>
+                                        <div class="item">
+                                            <i class="fa-regular fa-circle-check"></i>
+                                            <span class="icon-text">Order nhanh chóng trên nhiều thiết bị</span>
+                                        </div>
+                                        <div class="item">
+                                            <i class="fa-regular fa-circle-check"></i>
+                                            <span class="icon-text">Tính tiền chính xác, in hóa đơn chuyên nghiệp</span>
+                                        </div>
+                                        <div class="item">
+                                            <i class="fa-regular fa-circle-check"></i>
+                                            <span class="icon-text">Tuản lý số lượng nguyên vật liệu trong kho</span>
+                                        </div>
+                                        <div class="item">
+                                            <i class="fa-regular fa-circle-check"></i>
+                                            <span class="icon-text">Báo cáo bán hàng chi tiết & trực quan</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade tab-cate" id="logo" role="tabpanel">
+                    <div class="container">
+                        <div class="block-title py-4">
+                            <h2>Chi phí thiết kế website bán hàng chuyên nghiệp</h2>
+                            <p>Sở hữu website bán hàng chuẩn SEO với giao diện đẹp mắt</p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-md-4 col-half">
+                            <div class="main-content">
+                                <div class="card mb-4 card-wrapper">
+                                    <div class="title-option">
+                                        <h2 class="name-option">START UP</h2>
+                                        <div class="text-center" style="text-decoration: line-through;">
+                                            <p class="root-price"><span class="fw-medium"
+                                                    style="font-size: 22px">249.000<sup>đ</sup></span> <span
+                                                    class="fw-light">/tháng</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="sale-option text-center">
+                                        <p class="sale-condition">Khi mua từ 2 năm</p>
+                                        <span class="sale-price">170.000<sup>đ</sup></span><span
+                                            style="font-size: 18px;font-weight: 300;">/tháng</span>
+                                    </div>
+                                    <button class="try-use">Dùng thử</button>
+
+                                    <hr>
+                                    <div class="feature">
+                                        <div class="font-weight-bold pb-3">Quán có quy mô nhỏ, nghiệp vụ bán hàng cơ bản
+                                        </div>
+                                        <div class="item">
+                                            <i class="fa-regular fa-circle-check"></i>
+                                            <span class="icon-text">1 chi nhánh</span>
+                                        </div>
+                                        <div class="item">
+                                            <i class="fa-regular fa-circle-check"></i>
+                                            <span class="icon-text">5 thiết bị bán hàng</span>
+                                        </div>
+                                        <div class="item">
+                                            <i class="fa-regular fa-circle-check"></i>
+                                            <span class="icon-text">Order nhanh chóng trên nhiều thiết bị</span>
+                                        </div>
+                                        <div class="item">
+                                            <i class="fa-regular fa-circle-check"></i>
+                                            <span class="icon-text">Tính tiền chính xác, in hóa đơn chuyên nghiệp</span>
+                                        </div>
+                                        <div class="item">
+                                            <i class="fa-regular fa-circle-check"></i>
+                                            <span class="icon-text">Tuản lý số lượng nguyên vật liệu trong kho</span>
+                                        </div>
+                                        <div class="item">
+                                            <i class="fa-regular fa-circle-check"></i>
+                                            <span class="icon-text">Báo cáo bán hàng chi tiết & trực quan</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    </main>
+
+
+    <footer>
+        <div class="container">
+            <div class="bg-register">
+                <h2>Sapo - Tất cả những gì bạn cần để <br class="d-block d-md-none">quản lý và kinh doanh</h2>
+                <label for="site_name_bottom">Chúc mừng bạn có 7 ngày dùng thử miễn phí. Nhanh tay đăng ký ngay
+                    !</label>
+                <div class="reg-form d-flex justify-content-center w-75 mx-auto">
+                    <div class="col-lg-8">
+                        <input id="site_name_bottom" class="input-site-name d-none d-md-inline-block" type="text"
+                            value="" placeholder="Nhập tên cửa hàng/doanh nghiệp của bạn" name="StoreName">
+                    </div>
+                    <div class="col-lg-4">
+                        <a class="btn-registration banner-home-registration event-Sapo-Free-Trial-form-open">
+                            <span class="text">Dùng thử miễn phí</span>
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                                    class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+
+
+        document.querySelectorAll('.tab-item').forEach(tab => {
+            tab.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                // Remove active class from all tabs
+                document.querySelectorAll('.tab-item').forEach(t => t.classList.remove('active'));
+
+                // Add active class to clicked tab
+                this.classList.add('active');
+
+                const category = this.dataset.category;
+                console.log('Switched to category:', category);
+            });
+        });
+        $('.block-content').slick({
+            dots: false,
+            infinite: false,
+            arrows: false,
+            speed: 300,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: false
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+
+        $('.template-grid').slick({
+            dots: false,
+            infinite: false,
+            arrows: false,
+            speed: 300,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: false
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+
+            ]
+        });
+
+        $('.marquee').marquee({
+            direction: 'left',
+            duration: 9000,
+            duplicated: true,
+            startVisible: true
+        });
+        $('.count').counterUp({
+            delay: 10,
+            time: 2000
+        });
+
+        function show() {
+            $(".header-mobile").addClass('active')
+            $(".overflow").addClass('active')
+        }
+        function Close() {
+            $(".header-mobile").removeClass('active')
+            $(".overflow").removeClass('active')
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,560 @@
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #e6f0ff, #ffffff);
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .nav-tabs .nav-link.active {
+            background-color: white;
+            border-color: #dee2e6 #dee2e6 #fff;
+        }
+
+        .nav-tabs .nav-item:first-child .nav-link.active {
+        border-radius: 12px 0 0 0;
+        }
+
+        .nav-tabs .nav-item:last-child .nav-link.active {
+        border-radius: 0 12px 0 0;
+        }
+
+        .nav-link:hover{
+            border: none;
+        }
+
+        .card {
+            box-shadow: 0 -1px 12px rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .card .block-option {
+            text-align: center;
+        }
+
+        .card .title-option {
+            padding: 0 50px;
+            padding-top: 40px;
+            
+        }
+
+
+        .card .title-option .name-option {
+            font-weight: 700;
+            font-size: 24px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #000;
+            margin-bottom: 6px;
+            line-height: 100%;
+        }
+
+
+
+        /* .card .block-option .name-option {
+            font-weight: 700;
+            font-size: 24px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #000;
+            margin-bottom: 6px;
+            line-height: 100%;
+        }*/
+
+        .card .block-option .root-price {
+            margin-bottom: 21px;
+            font-size: 22px;
+            line-height: 30px;
+            text-align: center;
+            font-weight: 400;
+            text-decoration: line-through;
+            color: #000;
+
+        } 
+
+        .card .sale-option {
+            padding: 20px 20px;
+        }
+
+        .card .sale-option .sale-condition {
+            background-image: url(/images/bg-mua-2-nam.png);
+            background-position: center top;
+            background-repeat: no-repeat;
+            color: white;
+        }
+
+        .card .sale-option .sale-price {
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 30px;
+            text-align: center;
+            margin-top: 16px;
+            color: #007aff;
+        }
+
+        .card-header {
+            background-color: transparent;
+            border-bottom: none;
+        }
+
+        .price {
+            font-size: 28px;
+            color: #00a651;
+            font-weight: bold;
+        }
+
+        .btn-trial {
+            background-color: #00c292;
+            color: #fff;
+            border-radius: 20px;
+        }
+
+        .card-title {
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        .tab-pane ul {
+            min-height: 200px;
+        }
+
+        .card-badge {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            background: #ff4d4f;
+            color: #fff;
+            font-weight: bold;
+            padding: 6px 12px;
+            border-radius: 50px;
+            font-size: 12px;
+        }
+
+        .card-wrapper {
+            position: relative;
+        }
+
+        .title-page {
+            background-color: #24282f;
+            padding: 40px 0;
+        }
+
+        .title-page .block-title {
+            color: white;
+            text-align: center;
+        }
+
+        .title-page .block-title h2 {
+            font-size: 46px;
+            line-height: 100%;
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+
+        .title-page .block-title p {
+            font-size: 18px;
+            font-weight: 300;
+        }
+
+        .nav {
+            width: 80%;
+            margin-bottom: 11px;
+            background-color: #e2edf9;
+            border-radius: 12px 12px 0 0;
+        }
+
+        .nav-item {
+            /* width: 33%; */
+            line-height: 100%;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 20px;
+            padding: 0;
+            border-right: 1px solid #9bc1ea;
+            /* border-right: 1px solid rgb(189, 189, 189); */
+        }
+
+        .nav-link {
+            color: #142b4a;
+            width: 100%;
+            height: 100%;
+            padding: 10px 20px;
+            height: 63px;
+            border-right: 1px solid #9bc1ea;
+        }
+        .feature{
+            padding: 0 20px;
+            font-size: 14px;
+        }
+
+        .tab-cate .block-title{
+            text-align: center;
+            margin: 0;
+        }
+        .tab-cate .block-title h2{
+            font-size: 26px;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .tab-cate .block-title p{
+            font-size: 14px;
+            line-height: 21px;
+            font-weight: 200;
+            padding: 0 250px;
+            color: #515151;
+        }
+
+            .service-button {
+      background-color: #e6f1ff;
+      color: #007bff;
+      padding: 10px 16px;
+      border-radius: 10px;
+      font-size: 16px;
+      font-family: sans-serif;
+      border: none;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .service-button .icon {
+      margin-left: 8px;
+      font-size: 14px;
+    }
+
+    .option-comparison .name-option{
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 4px;
+    }
+
+    .option-comparison .root-price{
+        margin: 0;
+    }
+
+    .can-doc{
+        display: flex;
+      align-items: center; 
+    }
+    .fz14{
+        font-size: 14px;
+    }
+
+    #pricingTabsContent{
+        overflow: hidden;
+        padding-bottom: 150px;
+    }
+
+    .icon-text{
+    display: inline-block; 
+    vertical-align: middle;
+}
+
+.main-content{
+    margin: 20px;
+}
+
+.sec-content{
+    background-color: white;
+}
+.sec-content .tab-content .block-title h2{
+    color: black;
+}
+
+.try-use{
+    background: linear-gradient(272.65deg, #0cceb0 20.05%, #2ad38b 84.62%);
+    color: white;
+    width: 70%;
+    padding: 12px 10px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 30px;
+    margin: 25px auto;
+}
+
+    .feature    .item {
+            display: flex; 
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+     .feature    .item i {
+            color: #28a745; 
+            margin-right: 8px; 
+            flex-shrink: 0; 
+        }
+
+    .feature     .icon-text {
+            display: inline-block;
+            vertical-align: middle;
+            max-width: 100%;
+        }
+
+        .comparison {
+                margin-top: 30px;
+        }
+        .comparison hr{
+            margin:0;
+        }
+        .comparison .card{
+            box-shadow: none;
+        }
+        .comparison .card-body{
+            padding-top: 0;
+        }
+        .comparison .fa-circle-check{
+            /* background-color: #bfdeff; */
+            color: #004793;
+            font-size: 24px;
+        }
+
+        .compare-button {
+            /* Sử dụng flexbox để căn chỉnh nội dung bên trong nút */
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Căn giữa nội dung */
+            gap: 8px; /* Khoảng cách giữa text và icon */
+
+            /* Kiểu dáng nút */
+            background-color: #e0f2fe; /* Màu nền xanh nhạt */
+            color: #1a73e8; /* Màu chữ xanh dương */
+            padding: 10px 20px; /* Đệm trên/dưới 10px và trái/phải 20px */
+            border-radius: 28px; /* Bo tròn góc rất nhiều */
+            border: none; /* Không có viền */
+            cursor: pointer; /* Thay đổi con trỏ khi di chuột */
+            font-size: 16px; /* Kích thước chữ */
+            font-weight: 600; /* Độ đậm của chữ (đã tăng từ 500 lên 600) */
+            text-decoration: none; /* Loại bỏ gạch chân nếu là thẻ <a> */
+            transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Hiệu ứng chuyển động mượt mà */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+        }
+
+        .compare-button:hover {
+            background-color: #cce7ff; /* Màu nền đậm hơn khi di chuột qua */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Đổ bóng rõ hơn khi di chuột qua */
+        }
+
+        .compare-button .button-text {
+            /* Đảm bảo văn bản không bị gãy dòng nếu không cần thiết */
+            white-space: nowrap;
+            padding: 15px 20px;
+            font-size: 20px;
+        }
+
+        .compare-button .fa-chevron-down {
+            font-size: 14px; /* Kích thước icon */
+            color: #1a73e8; /* Màu icon giống màu chữ */
+        }
+
+        .card-body svg{
+            margin-bottom: 38px;
+            margin-right: -12px;
+            margin-left: -27px;
+        }
+
+        .card-body .try-use{
+            width: 20%;
+            padding: 10px 0;
+            margin: 0 10px;
+        }
+
+        .try-text{
+            font-size: 14px;
+            font-weight: 500;
+            font-style: italic;
+            line-height: 100%;
+            color: #000;
+            padding-left: 42px;
+        }
+
+        .compare-button-child {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background-color: #e0f2fe;
+            color: black;
+            padding: 10px 20px; 
+            border-radius: 28px; 
+            border: none; /* Không có viền */
+            cursor: pointer; /* Thay đổi con trỏ khi di chuột */
+            font-size: 17px; /* Kích thước chữ */
+            font-weight: 600; /* Độ đậm của chữ (đã tăng từ 500 lên 600) */
+            text-decoration: none; /* Loại bỏ gạch chân nếu là thẻ <a> */
+            transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Hiệu ứng chuyển động mượt mà */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+        }
+
+        .compare-button-child:hover {
+            background-color: #cce7ff; /* Màu nền đậm hơn khi di chuột qua */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Đổ bóng rõ hơn khi di chuột qua */
+        }
+
+        .compare-button-child .button-text {
+            /* Đảm bảo văn bản không bị gãy dòng nếu không cần thiết */
+            white-space: nowrap;
+            font-weight: 700;
+        }
+
+        .compare-button-child .fa-chevron-down {
+            font-size: 14px; /* Kích thước icon */
+            color: #1a73e8; /* Màu icon giống màu chữ */
+        }
+
+        .nav-bar{
+            display: flex; justify-content: center; margin-bottom: -51px; font-family: Arial, sans-serif;
+        }
+.bar-mobile{
+    display: none;
+}
+.compare-mobile{
+    display: none;
+}
+
+.detail-compare{
+    padding-left: 30px; background-color: #e2f0ff;border-radius: 8px;
+}
+
+@media (max-width: 1024px) {
+    .title-page .block-title .title{
+        font-size: 42px;
+    }
+    .title-page .block-title .sub{
+        font-size: 17px;
+    }
+    .nav-link.active{
+        font-size: 17px;
+    }
+    .nav-link{
+        font-size: 17px;   
+    }
+    .comparison .button-text{
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 900px) {
+    .title-page .block-title{
+        margin-bottom: 0;
+    }
+    .title-page .block-title .title{
+        font-size: 40px;
+    }
+    .title-page .block-title .sub{
+        font-size: 18px;
+    }
+
+    .nav{
+        width: 92%;
+    }
+    .nav-link.active{
+        font-size: 14px;
+    }
+    .nav-link{
+        font-size: 14px;  
+    }
+
+    .title-service{
+        font-size: 26px;
+    }
+
+    .tab-cate .block-title p{
+                padding: 0 100px;
+    } 
+
+    .col-half {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .comparison .button-text{
+        font-size: 17px;
+    }
+
+    .try-use{
+        font-size: 15px;
+        width: 30% !important;
+    }
+    .option-comparison .name-option{
+        font-size: 18px;
+    }
+    .option-comparison .root-price{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 600px) {
+    .title-page .block-title{
+        margin-bottom: 0;
+    }
+    .title-page .block-title .title{
+        font-size: 28px;
+    }
+    .title-page .block-title .sub{
+        font-size: 14px;
+    }
+
+    .bar-mobile{
+        display: block;
+    }
+    .bar-main{
+        display: none;
+    }
+
+    .nav{
+        width: 100%;
+        margin: 0;
+        border-radius: 0 0 0 0;
+        padding-bottom: 10px;
+    }
+    .nav-link.active{
+        font-size: 15px;
+    }
+    .nav-link{
+        font-size: 15px;  
+    }
+
+    .title-service{
+        font-size: 19px;
+    }
+
+    .tab-cate .block-title p{
+        padding: 0 20px;
+    } 
+
+    .col-half {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .comparison .button-text{
+        font-size: 17px;
+    }
+
+    .try-use{
+        font-size: 15px;
+        width: 30% !important;
+    }
+    .option-comparison .name-option{
+        font-size: 18px;
+    }
+    .option-comparison .root-price{
+        font-size: 12px;
+    }
+
+    .compare-main{
+        display: none;
+    }
+    .compare-mobile{
+        display: block;
+    }
+    .compare-mobile .try-text{
+        display: none;
+    }
+
+    #pricingTabsContent{
+        padding-bottom: 0;
+    }
+}

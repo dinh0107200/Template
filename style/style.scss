@@ -2504,7 +2504,6 @@ ul {
             font-size: 17px;
         }
     }
-
 }
 
 @include maxWidth(900px) {
@@ -2663,13 +2662,26 @@ ul {
     .bg-register .text {
         font-size: 13px;
     }
+
+    .title-page .block-title{
+        .title{
+            font-size: 36px;
+        }
+        .sub{
+            font-size: 17px;
+        }
+    }
 }
+
 
 .speed-img {
     width: 100%;
 }
 
+
 @include maxWidth(600px) {
+
+
     .banner-title {
         line-height: 34px;
         font-size: 24px;
@@ -2828,7 +2840,8 @@ ul {
     .bg-register {
         display: none;
     }
-}
+
+}   
 
 .overflow {
     position: fixed;
@@ -2844,3 +2857,4 @@ ul {
         left: 0;
     }
 }
+

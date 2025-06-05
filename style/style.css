@@ -2359,6 +2359,12 @@ ul {
   .bg-register .text {
     font-size: 13px;
   }
+  .title-page .block-title .title {
+    font-size: 36px;
+  }
+  .title-page .block-title .sub {
+    font-size: 17px;
+  }
 }
 .speed-img {
   width: 100%;

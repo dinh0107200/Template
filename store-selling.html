@@ -17,16 +17,16 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="style/selling.css" />
+    <link rel="stylesheet" href="style/store-selling.css" />
     <!-- Slick CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 
-<!-- jQuery -->
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
-<!-- Slick JS -->
-<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- Slick JS -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 </head>
 
@@ -53,7 +53,7 @@
                             <a href="/">Web doanh nghiệp</a>
                         </li>
                         <li>
-                            <a href="./option-price.html">Bảng giá</a>
+                            <a href="./service.html">Bảng giá</a>
                         </li>
                         <li>
                             <a href="./template.html">Giao diện</a>
@@ -93,7 +93,48 @@
                     <a href="/">Web doanh nghiệp</a>
                 </li>
                 <li>
-                    <a href="./option-price.html">Bảng giá</a>
+                    <a href="./service.html">Bảng giá</a>
+                </li>
+                <li>
+                    <a href="./template.html">Giao diện</a>
+                </li>
+                <li>
+                    <a href="./customer.html">Khách hàng</a>
+                </li>
+                <div class="d-flex btn-mb" style="gap: 10px; margin-top: 20px; justify-content: space-around;">
+                    <li>
+                        <a class="account-btn" href="">Đăng ký</a>
+                    </li>
+                    <li>
+                        <a class="account-btn" href="">Đăng nhập</a>
+                    </li>
+                </div>
+            </ul>
+        </div>
+    </div>
+    <div class="overflow" onclick="Close()">
+    </div>
+    <div class="header-mobile">
+        <div class="container">
+            <div class="row border-bottom pb-2">
+                <div class="col-5">
+                    <a href="/">
+                        <img src="./images/Sapo-logo.svg" alt="" class="logo">
+                    </a>
+                </div>
+                <div class="col-7 text-right text-white">
+                    <div class="close-header" onclick="Close()"><i class="fa-solid fa-xmark"></i></div>
+                </div>
+            </div>
+            <ul class="ul-reset ul-mobile">
+                <li>
+                    <a href="./store-selling.html">Web bán hàng</a>
+                </li>
+                <li>
+                    <a href="/">Web doanh nghiệp</a>
+                </li>
+                <li>
+                    <a href="./service.html">Bảng giá</a>
                 </li>
                 <li>
                     <a href="./template.html">Giao diện</a>
@@ -146,15 +187,46 @@
 
                 <div class=" align-items-center">
 
-                    <div class="d-flex justify-content-center">
+                    <div class="d-flex justify-content-center slider-main">
                         <img src="images/thiet-ke-website-ban-hang-pc.png" alt="Mockup"
                             class="img-slider img-fluid rounded">
                     </div>
+
+                    <div class="bd-example slider-moblie">
+                        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators" style="margin-bottom: -3px;">
+                                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner" role="listbox" style="padding: 20px;">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100"
+                                        data-src="holder.js/900x300?auto=yes&amp;bg=777&amp;fg=555&amp;text=First slide"
+                                        alt="First slide [900x300]" src="images/image-overview-mobile-1.png"
+                                        data-holder-rendered="true">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100"
+                                        data-src="holder.js/900x300?auto=yes&amp;bg=777&amp;fg=555&amp;text=First slide"
+                                        alt="First slide [900x300]" src="images/image-overview-mobile-2.png"
+                                        data-holder-rendered="true">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100"
+                                        data-src="holder.js/900x300?auto=yes&amp;bg=777&amp;fg=555&amp;text=First slide"
+                                        alt="First slide [900x300]" src="images/image-overview-mobile-3.png"
+                                        data-holder-rendered="true">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
 
-        <section class="section-about-us bg-white text-dark py-5">
+        <section class="section-about-us section-about-us-main bg-white text-dark py-5">
             <div class="container">
                 <div class="block-title">
                     <h2 class="font-weight-bold mb-4 marCenter">
@@ -196,7 +268,49 @@
             </div>
         </section>
 
-        <section class="section-helps-you">
+        <section class="section-about-us-mobile bg-white text-dark py-5">
+            <div class="container">
+                <div class="block-title">
+                    <h2 class="font-weight-bold mb-4 marCenter" style="color: black;">
+                        Tại sao 230,000 doanh nghiệp, chủ shop chọn thiết kế website bán hàng với Sapo?
+                    </h2>
+                </div>
+                <div class="row align-items-center" style="padding: 0 90px;">
+                    <div class="col-md-12" style="padding-bottom: 20px;">
+                        <img src="images/ly-do-chu-shop-chon-thiet-ke-website-ban-hang-sapo.png" alt="Sapo"
+                            class="img-fluid rounded">
+                    </div>
+                    <div class="col-md-12">
+                        <div class="item">
+                            <h3>Tăng uy tín cho thương hiệu</h3>
+                            <p>Tạo website bán hàng với giao diện chuyên nghiệp, đẹp mắt. Tối ưu trải nghiệm người dùng
+                                (UX), giúp khách hàng dễ dàng tìm kiếm và mua sắm trực tuyến, từ đó nâng cao độ tin cậy
+                                và hình ảnh thương hiệu của bạn trong mắt khách hàng.</p>
+                        </div>
+                        <div class="item">
+                            <h3>Mở rộng phạm vi tiếp cận khách hàng</h3>
+                            <p>Website bán hàng cho phép doanh nghiệp tiếp cận khách hàng mọi lúc, mọi nơi, không bị
+                                giới hạn bởi địa lý. Điều này giúp mở rộng thị trường và tăng cơ hội bán hàng, đồng thời
+                                nhắm tới đối tượng khách hàng tiềm năng một cách hiệu quả.</p>
+                        </div>
+                        <div class="item">
+                            <h3>Tiết kiệm thời gian, chi phí</h3>
+                            <p>Không còn phải lo lắng về chi phí thuê mặt bằng, chi phí cố định, nhân sự hay các dịch vụ
+                                đi kèm như cửa hàng truyền thống, chỉ với 16,000đ/ ngày, bạn đã sở hữu ngay một website
+                                chuyên nghiệp, bán hàng 24/7.</p>
+                        </div>
+                        <div class="item">
+                            <h3>Tăng tỷ lệ chuyển đổi đơn hàng</h3>
+                            <p>Một website chuyên nghiệp với các tính năng như tìm kiếm sản phẩm nhanh chóng, giỏ hàng
+                                tiện lợi, thanh toán đa dạng và bảo mật cao không chỉ tăng sự hài lòng của khách hàng mà
+                                còn tăng tỷ lệ chuyển đổi đơn hàng.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-helps-you section-helps-you-main">
             <div class="container">
                 <div class="block-title">
                     <h2>Sapo giúp bạn tạo website bán hàng chuyên nghiệp</h2>
@@ -322,6 +436,182 @@
             </div>
         </section>
 
+        <section class="section-helps-you section-helps-you-mobile">
+            <div class="container">
+                <div class="block-title">
+                    <h2>Sapo giúp bạn tạo website bán hàng chuyên nghiệp</h2>
+                    <p>Không cần biết thiết kế hay code bạn vẫn có thể thiết kế website bán hàng với nhiều tiện ích hiện
+                        đại</p>
+                </div>
+                <div class="row align-items-center list-help-main" style="padding: 0 90px;">
+                    <div class="col-md-12">
+                        <!-- Accordion Container -->
+                        <div id="featureAccordion" class="accordion bg-transparent text-white">
+
+                            <!-- Item 1 -->
+                            <div class="card bg-transparent border-0">
+                                <div class="card-header p-0" id="headingOne">
+                                    <h5 class="mb-0">
+                                        <button
+                                            class="btn btn-block text-left d-flex justify-content-between align-items-center collapsed"
+                                            data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+                                            aria-controls="collapseOne" data-img="/images/giao-dien-responsive.png">
+                                            400+ giao diện Responsive đẹp mắt
+                                            <span class="icon-toggle">-</span>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                    data-parent="#featureAccordion">
+                                    <div class="card-body pt-2 text-light">
+                                        <img class="img-fluid d-md-none mb-3" src="https://via.placeholder.com/500x300"
+                                            alt="Responsive">
+                                        Giao diện website được đầu tư thiết kế tỉ mỉ và đa dạng, đáp ứng nhu cầu làm
+                                        trang web bán hàng cho hơn 30 ngành nghề. Giao diện tối ưu trên mọi thiết bị.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Item 2 -->
+                            <div class="card bg-transparent border-0">
+                                <div class="card-header p-0" id="headingTwo">
+                                    <h5 class="mb-0">
+                                        <button
+                                            class="btn btn-block text-left d-flex justify-content-between align-items-center collapsed"
+                                            data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                            aria-controls="collapseTwo" data-img="/images/bao-mat-website.png">
+                                            Bảo mật tuyệt đối website với chứng chỉ SSL
+                                            <span class="icon-toggle">+</span>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                    data-parent="#featureAccordion">
+                                    <div class="card-body pt-2 text-light">
+                                        <img class="img-fluid d-md-none mb-3" src="https://via.placeholder.com/500x300"
+                                            alt="SSL">
+                                        Sapo bảo mật website với HTTPS và SSL tiêu chuẩn quốc tế. Mọi thông tin khách
+                                        hàng được mã hóa, ngăn chặn tấn công.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Item 3 -->
+                            <div class="card bg-transparent border-0">
+                                <div class="card-header p-0" id="headingThree">
+                                    <h5 class="mb-0">
+                                        <button
+                                            class="btn btn-block text-left d-flex justify-content-between align-items-center collapsed"
+                                            data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                            aria-controls="collapseThree"
+                                            data-img="/images/viet-content-tu-dong-voi-ai.png">
+                                            Viết content tự động bằng trí tuệ nhân tạo (AI)
+                                            <span class="icon-toggle">+</span>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#featureAccordion">
+                                    <div class="card-body pt-2 text-light">
+                                        <img class="img-fluid d-md-none mb-3" src="https://via.placeholder.com/500x300"
+                                            alt="AI Content">
+                                        Tạo nội dung mô tả sản phẩm nhanh chóng bằng AI, tùy chỉnh giọng văn phù hợp
+                                        từng nhóm khách hàng, tiết kiệm nhân lực.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Item 4 -->
+                            <div class="card bg-transparent border-0">
+                                <div class="card-header p-0" id="headingFour">
+                                    <h5 class="mb-0">
+                                        <button
+                                            class="btn btn-block text-left d-flex justify-content-between align-items-center"
+                                            data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                                            aria-controls="collapseFour" data-img="/images/quan-tri-web-de-dang.png">
+                                            Quản trị website dễ dàng
+                                            <span class="icon-toggle">+</span>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                    data-parent="#featureAccordion">
+                                    <div class="card-body pt-2 text-light">
+                                        <img class="img-fluid d-md-none mb-3" src="https://via.placeholder.com/500x300"
+                                            alt="Quản trị">
+                                        Giao diện quản trị thân thiện giúp dễ dàng cập nhật sản phẩm, quản lý đơn hàng
+                                        và thống kê hiệu quả — không cần biết kỹ thuật.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#" class="btn-custom d-inline-flex align-items-center px-4 py-2">
+                            <span class="text-button font-weight-bold flex-grow-1">Dùng thử miễn
+                                phí</span>
+                            <span class="icon-circle ml-3 d-flex justify-content-center align-items-center">
+                                <i class="fas fa-arrow-right text-dark"></i>
+                            </span>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="list-help-moblie">
+                <div class="bd-example">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                        <!-- <ol class="carousel-indicators" style="margin-bottom: -3px;">
+                            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                        </ol> -->
+                        <div class="carousel-inner" role="listbox" style="padding: 20px;">
+                            <div class="carousel-item active">
+                                <div class="card-header text-left p-0" id="headingOne">
+                                    <h5 class="mb-0">400+ giao diện Responsive đẹp mắt</h5><br>
+                                    <p> Giao diện website được đầu tư thiết kế tỉ mỉ và đa dạng, đáp ứng nhu cầu làm
+                                        trang web bán hàng cho hơn 30 ngành nghề. Giao diện tối ưu trên mọi thiết bị.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card-header text-left p-0" id="headingTwo">
+                                    <h5 class="mb-0">Bảo mật tuyệt đối website với chứng chỉ SSL</h5><br>
+                                    <p> Sapo bảo mật website với HTTPS và SSL tiêu chuẩn quốc tế. Mọi thông tin khách
+                                        hàng được mã hóa, ngăn chặn tấn công.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card-header text-left p-0" id="headingOne">
+                                    <h5 class="mb-0">Viết content tự động bằng trí tuệ nhân tạo (AI)</h5><br>
+                                    <p> Tạo nội dung mô tả sản phẩm nhanh chóng bằng AI, tùy chỉnh giọng văn phù hợp
+                                        từng nhóm khách hàng, tiết kiệm nhân lực.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card-header text-left p-0" id="headingOne">
+                                    <h5 class="mb-0">Quản trị website dễ dàng</h5><br>
+                                    <p> Giao diện quản trị thân thiện giúp dễ dàng cập nhật sản phẩm, quản lý đơn hàng
+                                        và thống kê hiệu quả — không cần biết kỹ thuật.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <a href="#" class="btn-custom d-inline-flex align-items-center px-4 py-2">
+                    <span class="text-button font-weight-bold flex-grow-1">Dùng thử miễn
+                        phí</span>
+                    <span class="icon-circle ml-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-arrow-right text-dark"></i>
+                    </span>
+                </a>
+            </div>
+            </div>
+        </section>
+
         <section class="section-choose-us bg-white text-dark py-5">
             <div class="container">
                 <div class="block-title">
@@ -365,7 +655,7 @@
             </div>
         </section>
 
-        <section class="section-about-tech">
+        <section class="section-about-tech section-about-tech-main">
             <div class="container">
                 <div class="block-title">
                     <p>Với công nghệ vượt trội và tính năng khác biệt</p>
@@ -413,30 +703,78 @@
             </div>
         </section>
 
+        <section class="section-about-tech section-about-tech-mobile">
+            <div class="container">
+                <div class="block-title">
+                    <p>Với công nghệ vượt trội và tính năng khác biệt</p>
+                    <h2>Thiết kế website bán hàng Sapo giúp xử lý đơn hàng hiệu quả, tối ưu chi phí</h2>
+                </div>
+                <div class="row align-items-center" style="padding: 0 30px;">
+                    <div class="img-content col-md-12">
+                        <img src="images/xu-ly-don-hang-toi-uu.png" alt="Sapo" class="img-fluid rounded">
+                    </div>
+                    <div class="col-md-12">
+                        <div class="item">
+                            <h3>Quy trình xử lý đơn tinh gọn</h3>
+                            <p>Sapo tối ưu quy trình xử lý đơn hàng khép kín với 4 bước đơn giản: Nhập thông tin > Thanh
+                                toán > Gửi đối tác vận chuyển > Hoàn thành. Quy trình này giúp giảm thiểu công việc thủ
+                                công và hạn chế tối đa sai sót.</p>
+                        </div>
+                        <div class="item">
+                            <h3>Sắp xếp ưu tiên cho địa chỉ nhận đơn</h3>
+                            <p>Chủ shop có thể sắp xếp thứ tự ưu tiên chi nhánh nhận đơn online dễ dàng bằng thao tác
+                                kéo thả, và cài đặt chi phí vận chuyển chính xác đến từng chi nhánh, đảm bảo mọi đơn
+                                hàng được xử lý nhanh chóng và chính xác.</p>
+                        </div>
+                        <div class="item">
+                            <h3>Kết nối với các đơn vị giao hàng, thanh toán trực tuyến</h3>
+                            <p>Bạn có thể theo dõi hành trình đơn hàng để biết được đã được giao hàng thành công tới tay
+                                khách hàng hay là chưa ngay trên trang quản trị Sapo, mà không cần tốn thời gian liên hệ
+                                với đơn vị vận chuyển.</p>
+                        </div>
+                        <div class="item">
+                            <h3>Tăng tỷ lệ chuyển đổi đơn hàng</h3>
+                            <p>Sapo kết nối với các đơn vị thanh toán trực tuyến hàng đầu như Paypal, Napas, OnePay…
+                                giúp khách hàng thanh toán 24/7 ngay trên website. Đồng thời, liên kết với các đơn vị
+                                vận chuyển như Sapo Express, Giao hàng nhanh, Viettel, VNPost… giúp tiết kiệm chi phí và
+                                giao hàng hiệu quả hơn.</p>
+                        </div>
+                        <a href="#" class="btn-custom d-inline-flex align-items-center px-4 py-2">
+                            <span class="text-button font-weight-bold flex-grow-1">Dùng thử miễn
+                                phí</span>
+                            <span class="icon-circle ml-3 d-flex justify-content-center align-items-center">
+                                <i class="fas fa-arrow-right text-dark"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="section-list-web bg-white text-dark py-5">
-        <div class="portfolio-slider">
-        <div class="slide">
-            <img src="images/img-themes-4.png" alt="Design 1">
-        </div>
-        <div class="slide">
-            <img src="images/img-themes-5.png" alt="Design 2">
-        </div>
-        <div class="slide">
-            <img src="images/img-themes-6.png" alt="Design 3">
-        </div>
-        <div class="slide">
-            <img src="images/img-themes-4.png" alt="Design 2">
-        </div>
-        <div class="slide">
-            <img src="images/img-themes-6.png" alt="Design 3">
-        </div>
-        <div class="slide">
-            <img src="images/img-themes-5.png" alt="Design 2">
-        </div>
-        <div class="slide">
-            <img src="images/img-themes-4.png" alt="Design 3">
-        </div>
-        </div>
+            <div class="portfolio-slider">
+                <div class="slide">
+                    <img src="images/img-themes-4.png" alt="Design 1">
+                </div>
+                <div class="slide">
+                    <img src="images/img-themes-5.png" alt="Design 2">
+                </div>
+                <div class="slide">
+                    <img src="images/img-themes-6.png" alt="Design 3">
+                </div>
+                <div class="slide">
+                    <img src="images/img-themes-4.png" alt="Design 2">
+                </div>
+                <div class="slide">
+                    <img src="images/img-themes-6.png" alt="Design 3">
+                </div>
+                <div class="slide">
+                    <img src="images/img-themes-5.png" alt="Design 2">
+                </div>
+                <div class="slide">
+                    <img src="images/img-themes-4.png" alt="Design 3">
+                </div>
+            </div>
 
         </section>
 
@@ -444,7 +782,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-5 col-md-5 col-12 col">
-                                                <div class="right-title block-title">
+                        <div class="right-title block-title">
                             <p>Bạn kinh doanh lĩnh vực nào?</p>
                             <h2>Sapo mang đến giải pháp dành riêng cho bạn</h2>
 
@@ -633,6 +971,72 @@
                 </div>
             </div>
         </section>
+        `
+        <!-- <section class="section-tutorial bg-white text-dark py-5">
+            <div class="container">
+                <div class="block-title">
+                    <h2>Hướng dẫn cách tạo website bán hàng với Sapo</h2>
+                    <p>Chỉ với 5 bước đơn giản dưới đây bạn đã sở hữu một website bán hàng chuyên nghiệp</p>
+                </div>
+
+
+                
+                <div class="row row-cols-lg-5 mt-3">
+                    <div class="col-lg col-md-4 mb-3">
+                        <img src="images/icon-step-1.png" alt="">
+                        <div class="content">
+                            <h3>1. Đăng kí dùng thử</h3>
+                            <p>Bạn click nút <b>“Dùng thử miễn phí”</b> và nhập đầy đủ thông tin vào form đăng ký để
+                                khởi tạo website bán hàng cho mình</p>
+                        </div>
+                    </div>
+                    <div class="col-lg col-md-4 mb-3">
+                        <img src="images/icon-step-2.png" alt="">
+                        <div class="content">
+                            <h3>2. Lựa chọn giao diện</h3>
+                            <p>Bạn có thể lựa chọn giao diện phù hợp trong kho giao diện của Sapo và dễ đàng tùy
+                                chỉnh
+                                trang website bán hàng</p>
+                        </div>
+                    </div>
+                    <div class="col-lg col-md-4 mb-3">
+                        <img src="images/icon-step-3.png" alt="">
+                        <div class="content">
+                            <h3>3. Đăng sản phẩm</h3>
+                            <p>Sau khi lựa chọn được giao diện phù hợp, bạn đã có thể đăng những sản phẩm đầu tiên
+                                lên
+                                website bán hàng của mình</p>
+                        </div>
+                    </div>
+                    <div class="col-lg col-md-4 mb-3">
+                        <img src="images/icon-step-4.png" alt="">
+                        <div class="content">
+                            <h3>4. Đăng ký tên miền</h3>
+                            <p>Bạn có thể đăng ký mua tên miền tại các trang mua bán tên miền. Hoặc thiết kế web bán
+                                hàng Sapo sẽ hỗ trợ bạn</p>
+                        </div>
+                    </div>
+                    <div class="col-lg col-md-4 mb-3">
+                        <img src="images/icon-step-5.png" alt="">
+                        <div class="content">
+                            <h3>5. Sẵn sàng bán hàng</h3>
+                            <p>Vậy là bạn đã hoàn tất việc thiết kế website bán hàng. Mọi thứ đã sẵn sàng để bạn bắt
+                                đầu
+                                bán hàng online trên website</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="display: flex; justify-content: center;">
+                    <a href="#" class="btn-custom d-inline-flex align-items-center px-4 py-2">
+                        <span class="text-button font-weight-bold flex-grow-1">Dùng thử miễn phí</span>
+                        <span class="icon-circle ml-3 d-flex justify-content-center align-items-center">
+                            <i class="fas fa-arrow-right text-dark"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section> -->
 
         <section class="section-question bg-white text-dark py-5">
             <div class="container">
@@ -806,27 +1210,7 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
-    <script>
-        const swiper = new Swiper(".mySwiper", {
-            loop: true,
-            slidesPerView: "auto",
-            centeredSlides: true,
-            spaceBetween: 30,
-            slideToClickedSlide: true,
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-                stopOnLastSlide: false,
-            },
-            on: {
-                slideChange: function () {
-                    // Tự động xử lý khi slide thay đổi nếu cần
-                }
-            }
-        });
-    </script>
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
@@ -870,31 +1254,141 @@
         });
     </script>
     <script>
-  $(document).ready(function(){
-    $('.portfolio-slider').slick({
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      arrows: true,
-      dots: true,
-      autoplay: true,
-      autoplaySpeed: 3000,
-      responsive: [
-        {
-          breakpoint: 992,
-          settings: {
-            slidesToShow: 2,
-          }
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 1,
-          }
+        $(document).ready(function () {
+            $('.portfolio-slider').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                arrows: true,
+                dots: true,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                responsive: [
+                    {
+                        breakpoint: 992,
+                        settings: {
+                            slidesToShow: 2,
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 1,
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+
+    <script>
+
+
+        document.querySelectorAll('.tab-item').forEach(tab => {
+            tab.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                // Remove active class from all tabs
+                document.querySelectorAll('.tab-item').forEach(t => t.classList.remove('active'));
+
+                // Add active class to clicked tab
+                this.classList.add('active');
+
+                const category = this.dataset.category;
+                console.log('Switched to category:', category);
+            });
+        });
+        $('.block-content').slick({
+            dots: false,
+            infinite: false,
+            arrows: false,
+            speed: 300,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: false
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+
+        $('.template-grid').slick({
+            dots: false,
+            infinite: false,
+            arrows: false,
+            speed: 300,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: false
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+
+            ]
+        });
+
+        $('.marquee').marquee({
+            direction: 'left',
+            duration: 9000,
+            duplicated: true,
+            startVisible: true
+        });
+        $('.count').counterUp({
+            delay: 10,
+            time: 2000
+        });
+
+        function show() {
+            $(".header-mobile").addClass('active')
+            $(".overflow").addClass('active')
         }
-      ]
-    });
-  });
-</script>
+        function Close() {
+            $(".header-mobile").removeClass('active')
+            $(".overflow").removeClass('active')
+        }
+    </script>
 
 </body>
 
